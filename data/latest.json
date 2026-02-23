@@ -1,13 +1,86 @@
 {
   "date": "2026-02-23",
+  "generated_by": "gamba",
   "papers": [
     {
-      "title": "Placeholder — first real digest coming soon",
-      "source": "arxiv",
-      "url": "https://arxiv.org",
-      "summary": "Gamba will push the first real digest shortly. This page auto-updates on each push.",
+      "title": "Epigenetic Clocks of Biological Aging and Risk of Incident Mild Cognitive Impairment and Dementia: The Women's Health Initiative Memory Study",
+      "source": "pubmed",
+      "url": "https://doi.org/10.1111/acel.70424",
+      "summary": "Horvath and colleagues used multiple epigenetic clocks to predict dementia risk in the WHI cohort. Accelerated epigenetic aging associated with increased MCI and dementia risk.",
+      "relevance": "epigenetic_clocks",
+      "score": 5
+    },
+    {
+      "title": "Supramolecular delivery of senolytics enables targeted anti-senescence therapy and accelerated fracture healing",
+      "source": "pubmed",
+      "url": "https://doi.org/10.1186/s12951-026-04138-2",
+      "summary": "New supramolecular delivery system for targeted senolytic therapy. Selective clearance of senescent cells at fracture sites, accelerating bone healing with reduced off-target effects.",
+      "relevance": "senolytics",
+      "score": 5
+    },
+    {
+      "title": "Mitochondrial bioenergetics-SASP crosstalk determines senolytic efficacy in therapy-induced senescence",
+      "source": "pubmed",
+      "url": "https://doi.org/10.1038/s41420-026-02967-6",
+      "summary": "Mitochondrial bioenergetics and SASP signalling interact to determine senolytic efficacy. Metabolic profiling could predict and improve senolytic drug selection.",
+      "relevance": "senolytics",
+      "score": 4
+    },
+    {
+      "title": "Senescent endothelial cells: key commanders of cellular communication within atherosclerotic plaques",
+      "source": "pubmed",
+      "url": "https://doi.org/10.3389/fimmu.2026.1712974",
+      "summary": "Senescent endothelial cells orchestrate intercellular communication in atherosclerotic plaques, driving plaque instability. Positions endothelial senescence as cardiovascular aging target.",
+      "relevance": "senolytics",
+      "score": 4
+    },
+    {
+      "title": "Human cytomegalovirus infection and cognitive decline",
+      "source": "pubmed",
+      "url": "https://doi.org/10.3389/fnagi.2025.1757461",
+      "summary": "CMV linked to accelerated cognitive decline. CMV DNA in 93% of vascular dementia brains vs 34% of controls. Clearing CMV may be a viable anti-aging immune strategy.",
+      "relevance": "gene_therapy",
+      "score": 4
+    },
+    {
+      "title": "Levetiracetam reduces amyloid-beta production via synaptic vesicle pathway",
+      "source": "pubmed",
+      "url": "https://doi.org/10.1126/scitranslmed.adp3984",
+      "summary": "FDA-approved epilepsy drug reduces Aβ42 production by modifying SV cycling. Restored abnormalities and reduced synapse loss in mice. Potential for early Alzheimer's prevention with existing drug.",
       "relevance": "partial_reprogramming",
-      "score": 1
+      "score": 3
+    },
+    {
+      "title": "Negative social ties as risk factors for accelerated aging, inflammation, and multimorbidity",
+      "source": "pubmed",
+      "url": "https://doi.org/10.1073/pnas.2515331123",
+      "summary": "PNAS study: negative social relationships associated with accelerated biological aging and higher multimorbidity. Social environment as modifiable aging factor.",
+      "relevance": "epigenetic_clocks",
+      "score": 3
+    },
+    {
+      "title": "Epigenetic and microbiome responses to greens supplementation in obese older adults",
+      "source": "pubmed",
+      "url": "https://doi.org/10.3389/fnut.2026.1750030",
+      "summary": "RCT showing greens supplementation altered DNA methylation and gut microbiome in obese older adults. Dietary interventions can modify epigenetic aging markers.",
+      "relevance": "epigenetic_clocks",
+      "score": 3
+    },
+    {
+      "title": "Aggregating Epigenetic Clocks to Study Human Capital Formation",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2509.14422",
+      "summary": "Novel approach aggregating multiple epigenetic clocks to study how socioeconomic factors affect biological aging via DunedinPACE.",
+      "relevance": "epigenetic_clocks",
+      "score": 3
+    },
+    {
+      "title": "Economic impact of biomarker-based aging interventions on healthcare costs",
+      "source": "arxiv",
+      "url": "https://arxiv.org/abs/2503.20357",
+      "summary": "Models economic impact of controlling aging pace through biomarker monitoring. Cost-effectiveness framework for longevity interventions using DunedinPACE.",
+      "relevance": "epigenetic_clocks",
+      "score": 3
     }
   ]
 }
