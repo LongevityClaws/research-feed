@@ -1,0 +1,23 @@
+name: Update Digest
+
+on:
+  repository_dispatch:
+    types: [new-digest]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Write digest
+        run: |
+          echo '${{ toJson(github.event.client_payload.digest) }}' > data/latest.json
+
+      - name: Commit & push
+        run: |
+          git config user.name "Gamba"
+          git config user.email "gamba@longevityclaws.ai"
+          git add data/latest.json
+          git diff --cached --quiet || git commit -m "digest: ${{ github.event.client_payload.digest.date }}"
+          git push
