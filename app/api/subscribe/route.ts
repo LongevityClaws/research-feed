@@ -1,25 +1,22 @@
-import { NextRequest, NextResponse } from 'next/server'
-import { sendWelcomeEmail } from '../../../lib/resend'
+import { NextRequest, NextResponse } from "next/server"
+import { sendWelcomeEmail } from "../../../lib/resend"
+import { addSubscriber, isSubscribed } from "../../../lib/kv"
 
-// In production: persist to DB (e.g. Vercel KV, PlanetScale, Neon)
-// For v1, we'll just send the welcome email
 export async function POST(req: NextRequest) {
   try {
-    const { email, tier = 'free' } = await req.json()
-    if (!email || !email.includes('@')) {
-      return NextResponse.json({ error: 'Invalid email' }, { status: 400 })
+    const { email, tier = "free" } = await req.json()
+    if (!email || typeof email !== "string" || !email.includes("@")) {
+      return NextResponse.json({ error: "Invalid email" }, { status: 400 })
     }
-
-    // Send welcome email via Resend (no-op if RESEND_API_KEY not set)
+    const normalised = email.toLowerCase().trim()
+    const already = await isSubscribed(normalised)
+    if (already) return NextResponse.json({ ok: true, message: "Already subscribed" })
+    await addSubscriber(normalised, "free")
     if (process.env.RESEND_API_KEY) {
-      await sendWelcomeEmail(email, tier)
-    } else {
-      console.log(`[subscribe] Would email ${email} (${tier}) — RESEND_API_KEY not set`)
+      try { await sendWelcomeEmail(normalised, tier) } catch (err) { console.error("[subscribe] Welcome email failed:", err) }
     }
-
     return NextResponse.json({ ok: true })
-  } catch (err) {
-    console.error('[subscribe] error:', err)
-    return NextResponse.json({ error: 'Server error' }, { status: 500 })
+  } catch {
+    return NextResponse.json({ error: "Bad request" }, { status: 400 })
   }
 }
