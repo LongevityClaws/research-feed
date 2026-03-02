@@ -1,11 +1,12 @@
 import type { Metadata } from 'next'
+import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'Longevity Digest — Daily Research for the Serious Biohacker',
-  description: 'Curated daily summaries of the most important longevity research — partial reprogramming, gene therapy, senolytics, and more. For biotech investors, biohackers, and longevity enthusiasts.',
+  title: 'Longevity Digest — Daily Research, Plainly Explained',
+  description: 'A curated daily briefing on the science of living longer. Partial reprogramming, gene therapy, senolytics, epigenetic clocks — distilled for investors, researchers, and the seriously curious.',
   openGraph: {
     title: 'Longevity Digest',
-    description: 'Daily curated longevity research, plain English.',
+    description: 'Daily longevity research, plainly explained.',
     url: 'https://longevitydigest.co',
   }
 }
@@ -13,13 +14,15 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body style={{
-        margin: 0,
-        background: '#0a0f1a',
-        color: '#e2e8f0',
-        fontFamily: '-apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif',
-        lineHeight: 1.6,
-      }}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body>
         {children}
       </body>
     </html>
