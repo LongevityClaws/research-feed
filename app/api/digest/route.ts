@@ -4,7 +4,8 @@ import { sendDailyDigest } from "../../../lib/resend"
 
 export async function POST(req: NextRequest) {
   const secret = req.headers.get("x-digest-secret")
-  if (!process.env.DIGEST_SECRET || secret !== process.env.DIGEST_SECRET) {
+  const digestSecret = process.env.DIGEST_SECRET?.trim()
+  if (!digestSecret || secret !== digestSecret) {
     return NextResponse.json({ error: "Unauthorized" }, { status: 401 })
   }
   try {
@@ -13,7 +14,7 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Invalid digest format" }, { status: 400 })
     }
     console.log(`[digest] Received for ${digest.date}: ${digest.papers.length} papers`)
-    if (process.env.RESEND_API_KEY) {
+    if (process.env.RESEND_API_KEY?.trim()) {
       const paid = await getSubscribers("paid")
       if (paid.length > 0) { await sendDailyDigest(paid, digest.papers, digest.date); console.log(`[digest] Sent full digest to ${paid.length} paid`) }
       const free = await getSubscribers("free")

@@ -2,16 +2,18 @@ import { NextRequest, NextResponse } from "next/server"
 import { upgradeSubscriber } from "../../../lib/kv"
 
 export async function POST(req: NextRequest) {
-  if (!process.env.STRIPE_SECRET_KEY || !process.env.STRIPE_WEBHOOK_SECRET) {
+  const stripeKey = process.env.STRIPE_SECRET_KEY?.trim()
+  const webhookSecret = process.env.STRIPE_WEBHOOK_SECRET?.trim()
+  if (!stripeKey || !webhookSecret) {
     return NextResponse.json({ error: "Stripe not configured" }, { status: 503 })
   }
   const Stripe = (await import("stripe")).default
-  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
+  const stripe = new Stripe(stripeKey)
   const body = await req.text()
   const sig = req.headers.get("stripe-signature")!
   let event
   try {
-    event = stripe.webhooks.constructEvent(body, sig, process.env.STRIPE_WEBHOOK_SECRET)
+    event = stripe.webhooks.constructEvent(body, sig, webhookSecret)
   } catch {
     return NextResponse.json({ error: "Webhook signature mismatch" }, { status: 400 })
   }

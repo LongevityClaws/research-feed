@@ -1,5 +1,5 @@
 async function getKV() {
-  if (!process.env.KV_REST_API_URL || !process.env.KV_REST_API_TOKEN) return null
+  if (!process.env.KV_REST_API_URL?.trim() || !process.env.KV_REST_API_TOKEN?.trim()) return null
   const { kv } = await import("@vercel/kv")
   return kv
 }
