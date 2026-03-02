@@ -1,85 +1,77 @@
 {
-  "date": "2026-02-23",
-  "generated_by": "gamba",
+  "date": "2026-03-02",
+  "generated_by": "pipeline",
   "papers": [
     {
-      "title": "Epigenetic Clocks of Biological Aging and Risk of Incident Mild Cognitive Impairment and Dementia: The Women's Health Initiative Memory Study",
+      "title": "P16",
       "source": "pubmed",
-      "url": "https://doi.org/10.1111/acel.70424",
-      "summary": "Horvath and colleagues used multiple epigenetic clocks to predict dementia risk in the WHI cohort. Accelerated epigenetic aging associated with increased MCI and dementia risk.",
-      "relevance": "epigenetic_clocks",
-      "score": 5
-    },
-    {
-      "title": "Supramolecular delivery of senolytics enables targeted anti-senescence therapy and accelerated fracture healing",
-      "source": "pubmed",
-      "url": "https://doi.org/10.1186/s12951-026-04138-2",
-      "summary": "New supramolecular delivery system for targeted senolytic therapy. Selective clearance of senescent cells at fracture sites, accelerating bone healing with reduced off-target effects.",
-      "relevance": "senolytics",
-      "score": 5
-    },
-    {
-      "title": "Mitochondrial bioenergetics-SASP crosstalk determines senolytic efficacy in therapy-induced senescence",
-      "source": "pubmed",
-      "url": "https://doi.org/10.1038/s41420-026-02967-6",
-      "summary": "Mitochondrial bioenergetics and SASP signalling interact to determine senolytic efficacy. Metabolic profiling could predict and improve senolytic drug selection.",
+      "url": "https://doi.org/10.1161/CIRCULATIONAHA.125.077172",
+      "summary": "This study investigates P16, a key cellular senescence marker, in the context of heart disease and tissue damage. P16 is a critical biomarker for senescent cells, making this highly relevant to senolytic research and understanding aging-related cardiac dysfunction.",
       "relevance": "senolytics",
       "score": 4
     },
     {
-      "title": "Senescent endothelial cells: key commanders of cellular communication within atherosclerotic plaques",
+      "title": "Caloric Restriction and Time-Restricted Eating in Older Adults with Overweight or Obesity: The Health, Aging, and Later-Life Outcomes Pilot Study.",
       "source": "pubmed",
-      "url": "https://doi.org/10.3389/fimmu.2026.1712974",
-      "summary": "Senescent endothelial cells orchestrate intercellular communication in atherosclerotic plaques, driving plaque instability. Positions endothelial senescence as cardiovascular aging target.",
-      "relevance": "senolytics",
-      "score": 4
-    },
-    {
-      "title": "Human cytomegalovirus infection and cognitive decline",
-      "source": "pubmed",
-      "url": "https://doi.org/10.3389/fnagi.2025.1757461",
-      "summary": "CMV linked to accelerated cognitive decline. CMV DNA in 93% of vascular dementia brains vs 34% of controls. Clearing CMV may be a viable anti-aging immune strategy.",
-      "relevance": "gene_therapy",
-      "score": 4
-    },
-    {
-      "title": "Levetiracetam reduces amyloid-beta production via synaptic vesicle pathway",
-      "source": "pubmed",
-      "url": "https://doi.org/10.1126/scitranslmed.adp3984",
-      "summary": "FDA-approved epilepsy drug reduces Aβ42 production by modifying SV cycling. Restored abnormalities and reduced synapse loss in mice. Potential for early Alzheimer's prevention with existing drug.",
+      "url": "https://doi.org/10.1093/gerona/glag061",
+      "summary": "This pilot study evaluates caloric restriction and time-restricted eating in older adults, both proven longevity interventions in animal models. It represents direct translation of major longevity research into human clinical trials for healthspan extension.",
       "relevance": "partial_reprogramming",
-      "score": 3
+      "score": 4
     },
     {
-      "title": "Negative social ties as risk factors for accelerated aging, inflammation, and multimorbidity",
+      "title": "Thiolutin extends replicative lifespan by rewiring yeast transcription and metabolism.",
       "source": "pubmed",
-      "url": "https://doi.org/10.1073/pnas.2515331123",
-      "summary": "PNAS study: negative social relationships associated with accelerated biological aging and higher multimorbidity. Social environment as modifiable aging factor.",
-      "relevance": "epigenetic_clocks",
-      "score": 3
+      "url": "https://doi.org/10.1038/s41598-026-42387-1",
+      "summary": "This study identifies thiolutin as a compound that extends lifespan in yeast by altering gene expression and metabolism. It represents a direct longevity intervention discovery that could inform development of human anti-aging therapeutics.",
+      "relevance": "partial_reprogramming",
+      "score": 4
     },
     {
-      "title": "Epigenetic and microbiome responses to greens supplementation in obese older adults",
+      "title": "Epigenetic age acceleration in adolescence: cross-sectional associations with dietary intake and prospective associations with cardiometabolic risk indicators in a Mexico City cohort.",
       "source": "pubmed",
-      "url": "https://doi.org/10.3389/fnut.2026.1750030",
-      "summary": "RCT showing greens supplementation altered DNA methylation and gut microbiome in obese older adults. Dietary interventions can modify epigenetic aging markers.",
+      "url": "https://doi.org/10.1016/j.numecd.2026.104574",
+      "summary": "This study examines how diet affects epigenetic aging clocks in adolescents and links accelerated epigenetic aging to future cardiovascular risk. It provides important insights into early-life factors affecting biological aging trajectories and validates epigenetic clocks as predictive tools.",
+      "relevance": "epigenetic_clocks",
+      "score": 4
+    },
+    {
+      "title": "Analysis of blood-based DNA methylation scores reveals associations with shared cohabitation duration in cohabiting pairs.",
+      "source": "pubmed",
+      "url": "https://doi.org/10.1093/gerona/glag036",
+      "summary": "This research examines how DNA methylation patterns in aging clocks are influenced by shared environmental exposures in couples. While it provides insights into epigenetic aging markers, it's more about environmental effects than longevity interventions.",
       "relevance": "epigenetic_clocks",
       "score": 3
     },
     {
-      "title": "Aggregating Epigenetic Clocks to Study Human Capital Formation",
-      "source": "arxiv",
-      "url": "https://arxiv.org/abs/2509.14422",
-      "summary": "Novel approach aggregating multiple epigenetic clocks to study how socioeconomic factors affect biological aging via DunedinPACE.",
+      "title": "Ultrasound-activated piezoelectric hydrogel promotes functional muscle repair by orchestrating myogenesis and reinnervation.",
+      "source": "pubmed",
+      "url": "https://doi.org/10.1186/s12951-026-04124-8",
+      "summary": "This study develops a wireless electrical stimulation system for muscle regeneration after traumatic injury. While it addresses tissue repair and regeneration relevant to aging, it's focused on acute injury rather than age-related muscle decline.",
+      "relevance": "gene_therapy",
+      "score": 3
+    },
+    {
+      "title": "Decoding the educational impact on Alzheimer's risk: an umbrella review of Mendelian randomization evidence.",
+      "source": "pubmed",
+      "url": "https://doi.org/10.1080/13607863.2026.2632752",
+      "summary": "This comprehensive review uses genetic evidence to establish that higher education causally reduces Alzheimer's risk. It provides important insights into cognitive reserve and brain aging, though it's more about risk factors than interventions.",
       "relevance": "epigenetic_clocks",
       "score": 3
     },
     {
-      "title": "Economic impact of biomarker-based aging interventions on healthcare costs",
-      "source": "arxiv",
-      "url": "https://arxiv.org/abs/2503.20357",
-      "summary": "Models economic impact of controlling aging pace through biomarker monitoring. Cost-effectiveness framework for longevity interventions using DunedinPACE.",
-      "relevance": "epigenetic_clocks",
+      "title": "Dual-targeted nano-inhibitors of pyroptosis for synergistic therapy of traumatic brain injury.",
+      "source": "pubmed",
+      "url": "https://doi.org/10.1016/j.jconrel.2026.114683",
+      "summary": "This research develops targeted nanoparticles to inhibit pyroptosis (inflammatory cell death) in brain injury. While pyroptosis is relevant to aging and neuroinflammation, this focuses on acute injury treatment rather than aging prevention.",
+      "relevance": "gene_therapy",
+      "score": 3
+    },
+    {
+      "title": "Between convenience and consequence: Ultraprocessed foods, protein nutrition, and the future of healthy aging.",
+      "source": "pubmed",
+      "url": "https://doi.org/10.1016/j.archger.2026.106193",
+      "summary": "This appears to be a review examining how processed food consumption affects healthy aging outcomes, particularly regarding protein nutrition. It addresses dietary factors in longevity but likely focuses more on health maintenance than breakthrough interventions.",
+      "relevance": "partial_reprogramming",
       "score": 3
     }
   ]
