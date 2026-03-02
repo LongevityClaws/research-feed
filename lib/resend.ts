@@ -12,7 +12,7 @@ type Paper = {
 
 export async function sendWelcomeEmail(email: string, tier: string) {
   const { Resend } = await import('resend')
-  const resend = new Resend(process.env.RESEND_API_KEY)
+  const resend = new Resend(process.env.RESEND_API_KEY?.trim())
 
   await resend.emails.send({
     from: 'Longevity Digest <hello@longevitydigest.co>',
@@ -30,7 +30,7 @@ export async function sendWelcomeEmail(email: string, tier: string) {
 
 export async function sendDailyDigest(emails: string[], papers: Paper[], date: string) {
   const { Resend } = await import('resend')
-  const resend = new Resend(process.env.RESEND_API_KEY)
+  const resend = new Resend(process.env.RESEND_API_KEY?.trim())
 
   const highlighted = papers.filter(p => p.score >= 3)
   const paperHtml = highlighted.slice(0, 5).map(p => `
