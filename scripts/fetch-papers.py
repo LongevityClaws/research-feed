@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Fetch today's longevity papers from PubMed, arXiv, bioRxiv.
-Score and summarise with Claude, output data/latest.json.
+Score and summarise with Claude, generate Boris's Take and subject line,
+output data/latest.json with tracking metadata.
 """
 
 import argparse
@@ -8,6 +9,7 @@ import json
 import os
 import sys
 import time
+import uuid
 import urllib.request
 import urllib.parse
 import xml.etree.ElementTree as ET
@@ -17,6 +19,7 @@ from pathlib import Path
 # ── config ──────────────────────────────────────────────────────────────────
 REPO_ROOT = Path(__file__).resolve().parent.parent
 AUTH_PROFILES = Path.home() / ".openclaw/agents/main/agent/auth-profiles.json"
+SEEN_ITEMS_PATH = REPO_ROOT / "data" / "seen-items.json"
 
 PUBMED_SEARCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi"
 PUBMED_FETCH = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi"
@@ -73,6 +76,34 @@ def get_llm_config() -> dict:
 
     print("ERROR: No working API keys found.", file=sys.stderr)
     sys.exit(1)
+
+
+# ── Deduplication ──────────────────────────────────────────────────────────
+
+def load_seen_items() -> set:
+    """Load set of already-seen URLs."""
+    if not SEEN_ITEMS_PATH.exists():
+        return set()
+    data = json.loads(SEEN_ITEMS_PATH.read_text())
+    return {item["url"] for item in data.get("seen", [])}
+
+
+def update_seen_items(papers: list[dict], date_str: str):
+    """Append new papers to seen-items.json."""
+    if SEEN_ITEMS_PATH.exists():
+        data = json.loads(SEEN_ITEMS_PATH.read_text())
+    else:
+        data = {"description": "URLs already featured in a digest. Checked before each new digest run to prevent duplicates.", "seen": []}
+
+    for p in papers:
+        data["seen"].append({
+            "url": p["url"],
+            "date": date_str,
+            "title": p["title"],
+        })
+
+    SEEN_ITEMS_PATH.write_text(json.dumps(data, indent=2) + "\n")
+    print(f"  Updated seen-items.json (+{len(papers)} items)")
 
 
 # ── PubMed ──────────────────────────────────────────────────────────────────
@@ -334,6 +365,133 @@ def score_papers(papers: list[dict], llm_config: dict) -> list[dict]:
     return results
 
 
+# ── Lead analysis ──────────────────────────────────────────────────────────
+
+LEAD_ANALYSIS_PROMPT = """You are a longevity research analyst writing for Longevity Digest.
+Write an 8-10 sentence deep analysis of this paper for an educated, non-specialist audience.
+
+Cover:
+1. What they found (the key result)
+2. The mechanism (how it works biologically)
+3. Clinical implications (what this means for patients/protocols)
+4. Implications for human longevity protocols
+
+Write in clear, direct prose. No jargon walls. Be specific about numbers, mechanisms, and implications.
+Do not use bullet points. Write flowing paragraphs.
+
+Paper title: {title}
+Source: {source}
+Abstract: {abstract}
+
+Return ONLY the analysis text, no preamble."""
+
+
+def generate_lead_analysis(lead_paper: dict, llm_config: dict) -> str:
+    """Generate deep 8-10 sentence analysis of the lead paper."""
+    prompt = LEAD_ANALYSIS_PROMPT.format(
+        title=lead_paper["title"],
+        source=lead_paper["source"],
+        abstract=lead_paper.get("abstract", lead_paper.get("summary", "")),
+    )
+    print("  Generating lead analysis...")
+    try:
+        return call_llm(llm_config, prompt)
+    except Exception as e:
+        print(f"  Lead analysis failed: {e}", file=sys.stderr)
+        return ""
+
+
+# ── Boris's Take ──────────────────────────────────────────────────────────
+
+BORIS_TAKE_PROMPT = """You are Boris Djordjevic, founder of 199 Biotechnologies, longevity scientist based in London. You follow your own protocol (senolytics, NAD+ precursors, rapamycin, epigenetic monitoring). Write 3-4 sentences: your honest, opinionated take on the most significant finding from today's digest. Be specific. No hedging. Reference your own experience or protocol where relevant. End with a practical implication for readers.
+
+Today's papers:
+{papers_summary}
+
+Return ONLY Boris's take, no preamble or quotes."""
+
+
+def generate_boris_take(papers: list[dict], llm_config: dict) -> str:
+    """Generate Boris's editorial take."""
+    papers_summary = "\n".join(
+        f"- {p['title']}: {p['summary']}" for p in papers[:5]
+    )
+    prompt = BORIS_TAKE_PROMPT.format(papers_summary=papers_summary)
+    print("  Generating Boris's Take...")
+    try:
+        return call_llm(llm_config, prompt)
+    except Exception as e:
+        print(f"  Boris's Take failed: {e}", file=sys.stderr)
+        return ""
+
+
+# ── Subject line ──────────────────────────────────────────────────────────
+
+SUBJECT_LINE_PROMPT = """You are writing a subject line for a longevity research email newsletter called "Longevity Digest".
+
+Rules:
+- Lead with the most interesting finding from today's papers
+- Be specific and intriguing, not generic
+- Do NOT use the format "Longevity Digest — Monday" or any day-of-week format
+- Keep it under 60 characters
+- Use sentence case
+- Examples of good subject lines:
+  "Some senescent cells resist senolytics. Here's the fix."
+  "Rapamycin works differently in women over 60"
+  "The epigenetic clock just got 40% more accurate"
+  "Caloric restriction doesn't work the way we thought"
+
+Today's papers:
+{papers_summary}
+
+Return ONLY the subject line, nothing else."""
+
+
+def generate_subject_line(papers: list[dict], llm_config: dict) -> str:
+    """Generate a smart subject line."""
+    papers_summary = "\n".join(
+        f"- {p['title']}: {p['summary']}" for p in papers[:5]
+    )
+    prompt = SUBJECT_LINE_PROMPT.format(papers_summary=papers_summary)
+    print("  Generating subject line...")
+    try:
+        subject = call_llm(llm_config, prompt).strip().strip('"\'')
+        return subject
+    except Exception as e:
+        print(f"  Subject line generation failed: {e}", file=sys.stderr)
+        return f"Longevity Digest — {datetime.now().strftime('%d %B %Y')}"
+
+
+# ── One Number ────────────────────────────────────────────────────────────
+
+ONE_NUMBER_PROMPT = """Extract one striking statistic from today's longevity research papers.
+Format it as a short, punchy stat that would catch a reader's eye.
+
+Examples:
+- "80% senescent cell clearance in 6 weeks"
+- "3.2 years of epigenetic age reversal"
+- "47% reduction in inflammatory markers"
+
+Today's papers:
+{papers_summary}
+
+Return ONLY the stat (one line), nothing else."""
+
+
+def generate_one_number(papers: list[dict], llm_config: dict) -> str:
+    """Generate the One Number stat."""
+    papers_summary = "\n".join(
+        f"- {p['title']}: {p['summary']}" for p in papers[:5]
+    )
+    prompt = ONE_NUMBER_PROMPT.format(papers_summary=papers_summary)
+    print("  Generating One Number...")
+    try:
+        return call_llm(llm_config, prompt).strip().strip('"\'')
+    except Exception as e:
+        print(f"  One Number failed: {e}", file=sys.stderr)
+        return ""
+
+
 # ── main ────────────────────────────────────────────────────────────────────
 
 def main():
@@ -350,6 +508,10 @@ def main():
     llm_config = get_llm_config()
     print(f"Using LLM: {llm_config['provider']} / {llm_config['model']}")
 
+    # Load seen items for dedup
+    seen_urls = load_seen_items()
+    print(f"  {len(seen_urls)} previously seen URLs loaded")
+
     # Fetch from all sources
     all_papers = []
     all_papers.extend(fetch_pubmed(date_str))
@@ -364,6 +526,16 @@ def main():
 
     print(f"\nTotal raw papers: {len(all_papers)}")
 
+    # Dedup against seen items
+    before_dedup = len(all_papers)
+    all_papers = [p for p in all_papers if p["url"] not in seen_urls]
+    if before_dedup != len(all_papers):
+        print(f"  Deduped: {before_dedup} → {len(all_papers)} (removed {before_dedup - len(all_papers)} seen)")
+
+    if not all_papers:
+        print("All papers already seen — nothing new.")
+        sys.exit(0)
+
     # Score with Claude
     scored = score_papers(all_papers, llm_config)
 
@@ -374,9 +546,34 @@ def main():
 
     print(f"Papers after filtering (score >= 3): {len(filtered)}")
 
+    if not filtered:
+        print("No papers scored >= 3. Exiting.")
+        sys.exit(0)
+
+    # Generate editorial content
+    lead_paper = filtered[0]
+
+    # Find the original paper with abstract for deeper analysis
+    lead_original = next(
+        (p for p in all_papers if p["url"] == lead_paper["url"]),
+        lead_paper
+    )
+
+    lead_analysis = generate_lead_analysis(lead_original, llm_config)
+    boris_take = generate_boris_take(filtered, llm_config)
+    subject_line = generate_subject_line(filtered, llm_config)
+    one_number = generate_one_number(filtered, llm_config)
+
+    email_id = str(uuid.uuid4())
+
     output = {
         "date": date_str,
         "generated_by": "pipeline",
+        "emailId": email_id,
+        "subjectLine": subject_line,
+        "borisTake": boris_take,
+        "leadAnalysis": lead_analysis,
+        "oneNumber": one_number,
         "papers": filtered,
     }
 
@@ -386,6 +583,11 @@ def main():
         out_path = REPO_ROOT / "data" / "latest.json"
         out_path.write_text(json.dumps(output, indent=2) + "\n")
         print(f"\nWrote {len(filtered)} papers to {out_path}")
+        print(f"  emailId: {email_id}")
+        print(f"  subject: {subject_line}")
+
+        # Update seen items
+        update_seen_items(filtered, date_str)
 
     return len(filtered)
 

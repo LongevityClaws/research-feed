@@ -16,7 +16,7 @@ echo ">> Fetching papers..."
 python3 "$SCRIPT_DIR/fetch-papers.py" --date "$DATE"
 
 # 2. Check if anything changed
-if git diff --quiet data/latest.json 2>/dev/null; then
+if git diff --quiet data/latest.json data/seen-items.json 2>/dev/null; then
     echo ">> No new papers — nothing to deploy."
     exit 0
 fi
@@ -24,7 +24,7 @@ fi
 # 3. Commit
 echo ""
 echo ">> Committing..."
-git add data/latest.json
+git add data/latest.json data/seen-items.json
 git commit -m "papers: $DATE"
 
 # 4. Push

@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server"
 import { sendWelcomeEmail } from "../../../lib/resend"
-import { addSubscriber, isSubscribed } from "../../../lib/kv"
+import { addSubscriber, isSubscribed, recordSubscriberEvent } from "../../../lib/kv"
 
 export async function POST(req: NextRequest) {
   try {
@@ -12,6 +12,7 @@ export async function POST(req: NextRequest) {
     const already = await isSubscribed(normalised)
     if (already) return NextResponse.json({ ok: true, message: "Already subscribed" })
     await addSubscriber(normalised, "free")
+    await recordSubscriberEvent("subscribe")
     if (process.env.RESEND_API_KEY) {
       try { await sendWelcomeEmail(normalised, tier) } catch (err) { console.error("[subscribe] Welcome email failed:", err) }
     }
