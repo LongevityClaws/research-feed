@@ -1,5 +1,6 @@
 // Resend email helper
 // Set RESEND_API_KEY in Vercel env vars
+import { manageUrl } from './manage-token'
 
 export type Paper = {
   title: string
@@ -157,7 +158,7 @@ function buildFullDigestHtml(digest: DigestData, email: string): string {
       ${restHtml}
       ${oneNumberHtml}
       <div class="footer">
-        <p><a href="${BASE_URL}">longevitydigest.co</a> · <a href="${BASE_URL}/api/unsubscribe?email=${encodeURIComponent(email)}">unsubscribe</a></p>
+        <p><a href="${BASE_URL}">longevitydigest.co</a> · <a href="${manageUrl(email)}">Manage subscription</a></p>
       </div>
       ${trackingPixel(digest.emailId)}
     </div>
@@ -171,10 +172,36 @@ function buildFreeDigestHtml(digest: DigestData, email: string): string {
   const leadPaper = digest.papers[0]
   if (!leadPaper) return ''
 
-  // Free gets headline + first 2 sentences of analysis
+  // Today's Lead: title + first 2 sentences only
   const fullText = digest.leadAnalysis || leadPaper.summary
   const sentences = fullText.match(/[^.!?]+[.!?]+/g) || [fullText]
   const teaser = sentences.slice(0, 2).join('').trim()
+
+  const leadTags = leadPaper.relevance.split('|').map(r =>
+    `<span class="paper-tag">${RELEVANCE_LABELS[r] ?? r}</span>`
+  ).join('')
+
+  // The Rest: first 2 items free, rest paywalled
+  const restPapers = digest.papers.slice(1, 5)
+  const freeRest = restPapers.slice(0, 2)
+  const lockedRest = restPapers.slice(2)
+
+  let restHtml = ''
+  if (freeRest.length > 0) {
+    restHtml += `<div class="section-label" style="margin-top:24px">The Rest</div>`
+    restHtml += freeRest.map(p => restItemHtml(p, digest.emailId)).join('')
+  }
+  if (lockedRest.length > 0) {
+    restHtml += lockedRest.map(p => `
+      <div class="rest-section" style="opacity:0.5">
+        <div class="rest-title">${p.title}</div>
+        <p class="rest-summary" style="font-style:italic;color:#8B7355"><strong>[PAID]</strong> Full summary available to paid members. <a href="${BASE_URL}/subscribe" style="color:#8B7355;font-weight:600">Upgrade to read &rarr;</a></p>
+      </div>
+    `).join('')
+  }
+
+  // One Number: free
+  const oneNumberHtml = digest.oneNumber ? oneNumberSectionHtml(digest.oneNumber) : ''
 
   return `<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><style>${EMAIL_BASE_STYLES}</style></head><body>
     <div class="wrapper">
@@ -186,15 +213,23 @@ function buildFreeDigestHtml(digest: DigestData, email: string): string {
         <div class="section-label">Today's Lead</div>
         <div class="lead-source">${leadPaper.source.toUpperCase()}</div>
         <div class="lead-title">${leadPaper.title}</div>
-        <p class="lead-body">${teaser}…</p>
+        <p class="lead-body">${teaser}</p>
+        <p class="lead-body" style="margin-top:8px;font-style:italic;color:#8B7355"><strong>[PAID]</strong> This analysis continues for paid members. <a href="${BASE_URL}/subscribe" style="color:#8B7355;font-weight:600">Upgrade &mdash; $12/month &rarr;</a></p>
+        ${leadTags}
       </div>
+      <div class="boris-section">
+        <div class="boris-label">Boris's Take</div>
+        <p class="boris-text">This section is available to paid members. <a href="${BASE_URL}/subscribe" style="color:#8B7355;font-weight:600">Upgrade to read &rarr;</a></p>
+      </div>
+      ${restHtml}
+      ${oneNumberHtml}
       <div class="cta-block">
-        <h3>Read the full analysis</h3>
-        <p>Members get the deep dive, Boris's take, and 3-4 more curated stories every morning.</p>
-        <a href="${BASE_URL}/subscribe" class="cta-btn">Become a member — $99/yr</a>
+        <h3>Get the full Longevity Digest</h3>
+        <p>Deep analysis, Boris's take, and every curated story — every morning.</p>
+        <a href="${BASE_URL}/subscribe" class="cta-btn">Become a member &mdash; $12/month</a>
       </div>
       <div class="footer">
-        <p><a href="${BASE_URL}">longevitydigest.co</a> · <a href="${BASE_URL}/api/unsubscribe?email=${encodeURIComponent(email)}">unsubscribe</a></p>
+        <p><a href="${BASE_URL}">longevitydigest.co</a> · <a href="${manageUrl(email)}">Manage subscription</a></p>
       </div>
       ${trackingPixel(digest.emailId)}
     </div>
@@ -228,7 +263,7 @@ export async function sendWelcomeEmail(email: string, tier: string) {
           <p style="font-size:14px;color:#64748b">You're a member — the full digest is yours every morning. We're glad you're here.</p>
         `}
         <div class="footer">
-          <p><a href="${BASE_URL}">longevitydigest.co</a> · <a href="${BASE_URL}/api/unsubscribe?email=${encodeURIComponent(email)}">unsubscribe</a></p>
+          <p><a href="${BASE_URL}">longevitydigest.co</a> · <a href="${manageUrl(email)}">Manage subscription</a></p>
         </div>
       </div>
     </body></html>`,

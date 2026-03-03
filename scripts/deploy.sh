@@ -35,5 +35,10 @@ git push
 echo ">> Deploying to Vercel..."
 vercel --prod --yes
 
+# 6. Send digest emails
+echo ""
+echo ">> Sending digest emails..."
+npx tsx "$SCRIPT_DIR/send-digest-email.ts"
+
 echo ""
 echo "=== Done ==="

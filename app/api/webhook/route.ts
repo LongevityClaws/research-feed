@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server"
-import { upgradeSubscriber } from "../../../lib/kv"
+import { upgradeSubscriber, setStripeCustomerId } from "../../../lib/kv"
 
 export async function POST(req: NextRequest) {
   const stripeKey = process.env.STRIPE_SECRET_KEY?.trim()
@@ -19,9 +19,13 @@ export async function POST(req: NextRequest) {
   }
   switch (event.type) {
     case "checkout.session.completed": {
-      const session = event.data.object as { customer_email?: string; customer_details?: { email?: string } }
+      const session = event.data.object as { customer_email?: string; customer_details?: { email?: string }; customer?: string }
       const email = session.customer_email ?? session.customer_details?.email
-      if (email) { await upgradeSubscriber(email.toLowerCase()); console.log(`[webhook] Upgraded: ${email}`) }
+      if (email) {
+        await upgradeSubscriber(email.toLowerCase())
+        if (session.customer) await setStripeCustomerId(email.toLowerCase(), session.customer)
+        console.log(`[webhook] Upgraded: ${email}, customer: ${session.customer}`)
+      }
       break
     }
     case "customer.subscription.deleted": {

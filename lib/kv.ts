@@ -43,6 +43,28 @@ export async function getSubscriberCount(): Promise<number> {
   if (!db) return 0
   return (await db.scard("subscribers:all")) ?? 0
 }
+export async function getSubscriberInfo(email: string): Promise<Record<string, string> | null> {
+  const db = await getKV()
+  if (!db) return null
+  return await db.hgetall(`subscriber:${email}`)
+}
+export async function setStripeCustomerId(email: string, customerId: string) {
+  const db = await getKV()
+  if (!db) return
+  await db.hset(`subscriber:${email}`, { stripeCustomerId: customerId })
+}
+export async function pauseSubscriber(email: string, days: number) {
+  const db = await getKV()
+  if (!db) return
+  const until = new Date()
+  until.setDate(until.getDate() + days)
+  await db.hset(`subscriber:${email}`, { pausedUntil: until.toISOString() })
+}
+export async function isSubscriberPaused(email: string): Promise<boolean> {
+  const info = await getSubscriberInfo(email)
+  if (!info?.pausedUntil) return false
+  return new Date(info.pausedUntil) > new Date()
+}
 
 // ── Email send tracking ──────────────────────────────────────────────────
 

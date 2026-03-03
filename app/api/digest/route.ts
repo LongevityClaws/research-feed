@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server"
-import { getSubscribers, trackEmailSend, getNextIssueNumber } from "../../../lib/kv"
+import { getSubscribers, trackEmailSend, getNextIssueNumber, isSubscriberPaused } from "../../../lib/kv"
 import { sendDailyDigest } from "../../../lib/resend"
 import type { DigestData } from "../../../lib/resend"
 
@@ -31,8 +31,14 @@ export async function POST(req: NextRequest) {
     }
 
     if (process.env.RESEND_API_KEY?.trim()) {
-      const paid = await getSubscribers("paid")
-      const free = await getSubscribers("free")
+      const allPaid = await getSubscribers("paid")
+      const allFree = await getSubscribers("free")
+
+      // Filter out paused subscribers
+      const paidChecks = await Promise.all(allPaid.map(async e => ({ e, paused: await isSubscriberPaused(e) })))
+      const freeChecks = await Promise.all(allFree.map(async e => ({ e, paused: await isSubscriberPaused(e) })))
+      const paid = paidChecks.filter(x => !x.paused).map(x => x.e)
+      const free = freeChecks.filter(x => !x.paused).map(x => x.e)
       const totalRecipients = paid.length + free.length
 
       if (paid.length > 0) {
