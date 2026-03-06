@@ -16,6 +16,12 @@ export async function POST(req: NextRequest) {
     }
     console.log(`[digest] Received for ${body.date}: ${body.papers.length} papers`)
 
+    // Guardrail: warn on missing editorial fields
+    const missing = ['borisTake', 'leadAnalysis', 'oneNumber'].filter(f => !body[f])
+    if (missing.length > 0) {
+      console.warn(`[digest] ⚠️ Missing editorial fields: ${missing.join(', ')} — email will render without them`)
+    }
+
     const emailId = body.emailId || crypto.randomUUID()
     const issueNumber = await getNextIssueNumber()
 

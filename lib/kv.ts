@@ -79,6 +79,8 @@ export async function trackEmailSend(emailId: string, data: {
   await db.hset(`email:${emailId}`, data)
   // Add to ordered list of sent digests
   await db.lpush("digests:sent", emailId)
+  // Date index for watchdog: digest:sent:YYYY-MM-DD = emailId
+  await db.set(`digest:sent:${data.date}`, emailId)
 }
 
 // ── Open tracking ────────────────────────────────────────────────────────
