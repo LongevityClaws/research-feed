@@ -1,51 +1,58 @@
 {
   "date": "2026-03-09",
-  "subjectLine": "SuperAgers have a neurogenesis resilience signature 🧠",
-  "borisTake": "The SuperAger chromatin accessibility data is the paper I've been waiting for — it frames cognitive resilience as an epigenetic phenotype, not a genetic lottery, which means partial reprogramming and rapamycin protocols are now mechanistically in play for neurogenesis maintenance. If this resilience signature can be induced rather than just inherited, everything changes.",
-  "leadAnalysis": "This multiomic study profiled 355,997 nuclei from post-mortem human hippocampi spanning five cohorts: young adults, cognitively normal elderly, SuperAgers, preclinical AD, and full AD. The core finding is that SuperAgers maintain a distinct neural stem cell and neuroblast population with a unique chromatin accessibility landscape — a 'resilience signature' not present in normal elderly. Critically, early chromatin remodelling in neurogenic cells appears in preclinical AD samples before any clinical symptoms manifest, establishing hippocampal neurogenesis integrity as a potential early biomarker for cognitive trajectory. CA1 neurons and astrocytic remodelling emerge as proximate drivers of age-related decline, and the transcription factor target gene signatures identified here give the field a concrete molecular shortlist for interventions aimed at preserving rather than restoring neurogenesis.",
-  "oneNumber": "355,997 | Human hippocampal nuclei profiled to map the SuperAger cognitive resilience signature — published in Nature",
+  "subjectLine": "SuperAgers have a neurogenesis resilience signature \ud83e\udde0",
+  "borisTake": "The SuperAger chromatin accessibility data is the paper I've been waiting for \u2014 it frames cognitive resilience as an epigenetic phenotype, not a genetic lottery, which means partial reprogramming and rapamycin protocols are now mechanistically in play for neurogenesis maintenance. If this resilience signature can be induced rather than just inherited, everything changes.",
+  "leadAnalysis": "This multiomic study profiled 355,997 nuclei from post-mortem human hippocampi spanning five cohorts: young adults, cognitively normal elderly, SuperAgers, preclinical AD, and full AD. The core finding is that SuperAgers maintain a distinct neural stem cell and neuroblast population with a unique chromatin accessibility landscape \u2014 a 'resilience signature' not present in normal elderly. Critically, early chromatin remodelling in neurogenic cells appears in preclinical AD samples before any clinical symptoms manifest, establishing hippocampal neurogenesis integrity as a potential early biomarker for cognitive trajectory. CA1 neurons and astrocytic remodelling emerge as proximate drivers of age-related decline, and the transcription factor target gene signatures identified here give the field a concrete molecular shortlist for interventions aimed at preserving rather than restoring neurogenesis.",
+  "oneNumber": "355,997 | Human hippocampal nuclei profiled to map the SuperAger cognitive resilience signature \u2014 published in Nature",
   "papers": [
     {
       "title": "SuperAgers Carry a Distinct Hippocampal Neurogenesis Resilience Signature",
       "url": "https://doi.org/10.1038/s41586-026-10169-4",
       "source": "Fight Aging! / Nature",
-      "summary": "Multiomic snRNA-seq and snATAC-seq of 355,997 hippocampal nuclei across cognitive phenotypes reveals SuperAgers have robust neural stem cell and neuroblast populations with unique chromatin accessibility. Early neurogenic chromatin changes appear in preclinical AD before symptoms, implicating neurogenesis as a biomarker and intervention target."
+      "summary": "Multiomic snRNA-seq and snATAC-seq of 355,997 hippocampal nuclei across cognitive phenotypes reveals SuperAgers have robust neural stem cell and neuroblast populations with unique chromatin accessibility. Early neurogenic chromatin changes appear in preclinical AD before symptoms, implicating neurogenesis as a biomarker and intervention target.",
+      "score": 5
     },
     {
       "title": "FOXO4-DRI Clears Senescent Endothelial Cells via P53 Pathway, Restoring Vascular Function",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41625068/",
       "source": "PubMed / Frontiers in Bioengineering and Biotechnology",
-      "summary": "FOXO4-DRI peptide disrupts FOXO4–P53 binding, forcing phospho-P53 nuclear exclusion and triggering BAX/caspase-3 apoptosis selectively in senescent endothelial cells. Injection in both naturally aged and progeroid mice suppressed aortic aging markers and improved vascular function — adding a vascular-specific tool to the senolytic toolkit."
+      "summary": "FOXO4-DRI peptide disrupts FOXO4\u2013P53 binding, forcing phospho-P53 nuclear exclusion and triggering BAX/caspase-3 apoptosis selectively in senescent endothelial cells. Injection in both naturally aged and progeroid mice suppressed aortic aging markers and improved vascular function \u2014 adding a vascular-specific tool to the senolytic toolkit.",
+      "score": 4
     },
     {
       "title": "Dietary PUFA:MUFA Ratio Controls T Cell Ferroptosis Resistance and Anti-Tumour Immunity",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41781622/",
       "source": "Lifespan.io / Nature",
-      "summary": "T cells from mice on high-PUFA diets were 2–3× more susceptible to ferroptosis than those on low-PUFA diets. High-ratio animals lost 3.5× more GPX4-deficient CD8+ T cells in vivo; TFH function and humoral immunity were severely compromised. Effect was diet-specific and independent of microbiota, pointing directly to membrane phospholipid composition as the lever."
+      "summary": "T cells from mice on high-PUFA diets were 2\u20133\u00d7 more susceptible to ferroptosis than those on low-PUFA diets. High-ratio animals lost 3.5\u00d7 more GPX4-deficient CD8+ T cells in vivo; TFH function and humoral immunity were severely compromised. Effect was diet-specific and independent of microbiota, pointing directly to membrane phospholipid composition as the lever.",
+      "score": 5
     },
     {
       "title": "Inflammaging Drives Senescent-Like Neutrophils That Worsen Pneumonia in Aged Mice",
       "url": "https://onlinelibrary.wiley.com/doi/10.1111/acel.70435",
       "source": "Lifespan.io / Aging Cell",
-      "summary": "Aged mice infected with S. pneumoniae released immature, senescence-marked neutrophils (SA-β-gal+) with impaired glycolysis and phagocytosis. Chronic baseline oxidative stress blunts the acute oxidative burst needed to kill bacteria. Transferring young neutrophils reversed susceptibility, identifying a potentially druggable neutrophil-senescence axis in age-related infection vulnerability."
+      "summary": "Aged mice infected with S. pneumoniae released immature, senescence-marked neutrophils (SA-\u03b2-gal+) with impaired glycolysis and phagocytosis. Chronic baseline oxidative stress blunts the acute oxidative burst needed to kill bacteria. Transferring young neutrophils reversed susceptibility, identifying a potentially druggable neutrophil-senescence axis in age-related infection vulnerability.",
+      "score": 3
     },
     {
       "title": "The Gut and Circulating Virome: Emerging Players in Aging and Longevity",
       "url": "https://doi.org/10.3389/fragi.2025.1731621",
       "source": "Fight Aging! / Frontiers in Aging",
-      "summary": "Comprehensive review of age-related virome shifts: expansion of bacteriophage families, latent virus reactivation, and pathobiont persistence link to immunosenescence and neurodegeneration. Notably, centenarians carry a distinct virome with higher diversity, increased lytic phage activity, and enriched phage-encoded metabolic genes — suggesting viral community composition as a longevity correlate."
+      "summary": "Comprehensive review of age-related virome shifts: expansion of bacteriophage families, latent virus reactivation, and pathobiont persistence link to immunosenescence and neurodegeneration. Notably, centenarians carry a distinct virome with higher diversity, increased lytic phage activity, and enriched phage-encoded metabolic genes \u2014 suggesting viral community composition as a longevity correlate.",
+      "score": 3
     },
     {
       "title": "FMO-2 Is the Common Downstream Effector of Multiple C. elegans Longevity Pathways",
       "url": "https://doi.org/10.64898/2026.02.10.705198",
       "source": "Fight Aging! / Preprint",
-      "summary": "Thirty years of C. elegans longevity genetics converges: mitochondrial mutants clk-1, isp-1, and nuo-6 all upregulate FMO-2 via HIF-1, and disrupting FMO-2 shortens their lifespan. DAF-16, SKN-1, AAK-2, PMK-1, and HIF-1 — the canonical longevity transcription factors — all require FMO-2 for lifespan extension, establishing it as a shared effector node."
+      "summary": "Thirty years of C. elegans longevity genetics converges: mitochondrial mutants clk-1, isp-1, and nuo-6 all upregulate FMO-2 via HIF-1, and disrupting FMO-2 shortens their lifespan. DAF-16, SKN-1, AAK-2, PMK-1, and HIF-1 \u2014 the canonical longevity transcription factors \u2014 all require FMO-2 for lifespan extension, establishing it as a shared effector node.",
+      "score": 3
     },
     {
       "title": "SRT2104 (SIRT1 Activator) Enhances Mitophagy and Reduces Senescence in Auditory Cells",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41593189/",
       "source": "PubMed / Scientific Reports",
-      "summary": "SRT2104, an oral SIRT1 activator with existing human trial data, reduces senescence markers and boosts mitophagy in cochlear hair cells — a non-regenerative tissue with zero senescent cell clearance mechanisms. Connects the SIRT1/mitophagy axis to age-related hearing loss and supports the case for SIRT1 activators in tissue-specific senescence management."
+      "summary": "SRT2104, an oral SIRT1 activator with existing human trial data, reduces senescence markers and boosts mitophagy in cochlear hair cells \u2014 a non-regenerative tissue with zero senescent cell clearance mechanisms. Connects the SIRT1/mitophagy axis to age-related hearing loss and supports the case for SIRT1 activators in tissue-specific senescence management.",
+      "score": 3
     }
   ]
 }
