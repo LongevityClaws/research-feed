@@ -1,11 +1,70 @@
 {
   "description": "URLs already featured in a digest. Checked before each new digest run to prevent duplicates.",
   "seen": [
-    {"url": "https://doi.org/10.1111/acel.70425", "date": "2026-03-02", "title": "Ageing Through the Looking-Glass: The Different Flavours of Clonal Haematopoiesis"},
-    {"url": "https://pubmed.ncbi.nlm.nih.gov/41597242/", "date": "2026-03-02", "title": "Partial Reprogramming Is Conserved from Insect to Mammal"},
-    {"url": "https://pubmed.ncbi.nlm.nih.gov/41462575/", "date": "2026-03-02", "title": "Senolytic-Resistant Senescent Cells Have a Distinct SASP Profile"},
-    {"url": "https://pubmed.ncbi.nlm.nih.gov/41528804/", "date": "2026-03-02", "title": "Molecular time machines unleashed: small-molecule-driven reprogramming"},
-    {"url": "https://pubmed.ncbi.nlm.nih.gov/41168880/", "date": "2026-03-02", "title": "Integrative Omics Reveal Female-Specific Benefits of p16(+) Cell Clearance"},
-    {"url": "https://pubmed.ncbi.nlm.nih.gov/41751214/", "date": "2026-03-02", "title": "Mechanistic Links Between the Gut Microbiome and Longevity Therapeutics"}
+    {
+      "url": "https://doi.org/10.1111/acel.70425",
+      "date": "2026-03-02",
+      "title": "Ageing Through the Looking-Glass: The Different Flavours of Clonal Haematopoiesis"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41597242/",
+      "date": "2026-03-02",
+      "title": "Partial Reprogramming Is Conserved from Insect to Mammal"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41462575/",
+      "date": "2026-03-02",
+      "title": "Senolytic-Resistant Senescent Cells Have a Distinct SASP Profile"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41528804/",
+      "date": "2026-03-02",
+      "title": "Molecular time machines unleashed: small-molecule-driven reprogramming"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41168880/",
+      "date": "2026-03-02",
+      "title": "Integrative Omics Reveal Female-Specific Benefits of p16(+) Cell Clearance"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41751214/",
+      "date": "2026-03-02",
+      "title": "Mechanistic Links Between the Gut Microbiome and Longevity Therapeutics"
+    },
+    {
+      "url": "https://doi.org/10.1038/s41586-026-10169-4",
+      "date": "2026-03-09",
+      "title": "SuperAgers Carry a Distinct Hippocampal Neurogenesis Resilience Signature"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41625068/",
+      "date": "2026-03-09",
+      "title": "FOXO4-DRI Clears Senescent Endothelial Cells via P53 Pathway"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41781622/",
+      "date": "2026-03-09",
+      "title": "Dietary PUFA:MUFA Ratio Controls T Cell Ferroptosis Resistance"
+    },
+    {
+      "url": "https://onlinelibrary.wiley.com/doi/10.1111/acel.70435",
+      "date": "2026-03-09",
+      "title": "Inflammaging Drives Senescent-Like Neutrophils That Worsen Pneumonia"
+    },
+    {
+      "url": "https://doi.org/10.3389/fragi.2025.1731621",
+      "date": "2026-03-09",
+      "title": "The Gut and Circulating Virome: Emerging Players in Aging and Longevity"
+    },
+    {
+      "url": "https://doi.org/10.64898/2026.02.10.705198",
+      "date": "2026-03-09",
+      "title": "FMO-2 Is the Common Downstream Effector of Multiple C. elegans Longevity Pathways"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41593189/",
+      "date": "2026-03-09",
+      "title": "SRT2104 Enhances Mitophagy and Reduces Senescence in Auditory Cells"
+    }
   ]
 }
