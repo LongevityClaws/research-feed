@@ -7,49 +7,56 @@
       "source": "Journal of Dental Research (2026)",
       "summary": "Skull bone marrow mesenchymal stromal cells retain latent neurogenic capacity via the transcription factor ANKRD1, which preserves SOX2 and NESTIN expression. Aging erodes ANKRD1 expression; restoring it via a promoter-constrained viral gene therapy rescues spatial memory in aged mice.",
       "isLead": true,
-      "score": 5
+      "score": 5,
+      "relevance": "gene_therapy|partial_reprogramming"
     },
     {
       "url": "https://pubmed.ncbi.nlm.nih.gov/41749460/",
       "title": "Rapamycin Reduces Amyloid-\u03b2 Plaques and Improves Behavioral Performance in a Sex-Dependent Manner in Mouse Models of Amyloidosis",
       "source": "CNS Neurosci Ther (2026 Mar)",
       "summary": "Oral rapamycin reduced cerebral A\u03b2 plaque burden in 5xFAD and hAPPNL mice, suppressed glial hyperactivation, and improved hippocampal memory \u2014 with significantly more pronounced effects in female mice. Mechanism: mTOR inhibition enhances microglial lysosomal activity and A\u03b2 phagocytic clearance.",
-      "score": 4
+      "score": 4,
+      "relevance": "senolytics|partial_reprogramming"
     },
     {
       "url": "https://doi.org/10.4062/biomolther.2026.014",
       "title": "Hypoxia as a Modulator of Cellular Senescence and Aging: Epigenetic Mechanisms and Therapeutic Implications",
       "source": "Biomolecules & Therapeutics (2026)",
       "summary": "Hypoxia delays senescence by stabilizing histone methylation and preserving nuclear lamina integrity via inhibition of oxygen-dependent histone lysine demethylases \u2014 a mechanism that overlaps with mTOR inhibition. Hypoxia-mimetic interventions emerge as a tractable strategy for modulating age-related cellular states.",
-      "score": 3
+      "score": 3,
+      "relevance": "senolytics"
     },
     {
       "url": "https://pubmed.ncbi.nlm.nih.gov/41721741/",
       "title": "Epigenetic Clocks of Biological Aging and Risk of Incident Mild Cognitive Impairment and Dementia: The Women's Health Initiative Memory Study",
       "source": "Aging Cell (2026 Mar)",
       "summary": "Among five epigenetic clocks tested in 6,069 women followed for a median 9.3 years (1,307 MCI/dementia events), only GrimAge2 independently predicted incident dementia (HR 1.11, p=0.01), surviving Bonferroni correction. First-generation Horvath and Hannum clocks were non-significant.",
-      "score": 5
+      "score": 5,
+      "relevance": "epigenetic_clocks"
     },
     {
       "url": "https://pubmed.ncbi.nlm.nih.gov/40768061/",
       "title": "EnsembleAge: Enhancing Epigenetic Age Assessment with a Multi-Clock Framework",
       "source": "Geroscience (2026 Apr)",
       "summary": "EnsembleAge combines multiple penalized models across 200+ perturbation experiments in mice, outperforming individual clocks for detecting both pro-aging and rejuvenating interventions. A HumanMouse cross-species extension enables translational research bridging mouse models to human epigenetic aging studies.",
-      "score": 4
+      "score": 4,
+      "relevance": "epigenetic_clocks"
     },
     {
       "url": "https://pubmed.ncbi.nlm.nih.gov/41554691/",
       "title": "Integrative Epigenetics and Transcriptomics Identify Aging Genes in Human Blood",
       "source": "Nature Communications (2026 Jan)",
       "summary": "Multi-omic integration of blood methylation and transcriptomics identifies a conserved core of genes whose epigenetic regulation tracks biological aging across diverse populations, providing high-confidence targets for future intervention studies.",
-      "score": 4
+      "score": 4,
+      "relevance": "epigenetic_clocks"
     },
     {
       "url": "https://doi.org/10.1038/s44318-026-00725-z",
       "title": "Evolutionary Diversity of Aging Patterns: A Field Perspective on Hallmarks Across Species",
       "source": "EMBO Reports (2026)",
       "summary": "A synthesis of how aging hallmarks identified in laboratory models explain \u2014 or fail to explain \u2014 the enormous variation in lifespan across animal species, arguing that evolutionary and developmental context must be incorporated into geroscience frameworks for designing broadly effective interventions.",
-      "score": 3
+      "score": 3,
+      "relevance": "partial_reprogramming"
     }
   ],
   "subjectLine": "Gene therapy restores aged brain from skull bone marrow \ud83e\udde0",
