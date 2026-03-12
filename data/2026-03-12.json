@@ -15,7 +15,8 @@
         "gene therapy",
         "cognitive aging"
       ],
-      "score": 5
+      "score": 5,
+      "relevance": "gene_therapy|neurogenesis"
     },
     {
       "title": "Uptake Mechanisms and Functions of Isolated Mitochondria in Mesenchymal Stromal Cells",
@@ -27,7 +28,8 @@
         "transplantation",
         "MSC"
       ],
-      "score": 4
+      "score": 4,
+      "relevance": "mitochondria|transplantation"
     },
     {
       "title": "Fenofibrate Delays Aging via the PPAR\u03b1\u2013CPT1C Axis",
@@ -40,7 +42,8 @@
         "PPAR\u03b1",
         "mitochondria"
       ],
-      "score": 4
+      "score": 4,
+      "relevance": "senolytics|drug_repurposing"
     },
     {
       "title": "Hypoxia Suppresses Senescence via Epigenetic Stabilisation",
@@ -53,7 +56,8 @@
         "hypoxia",
         "chromatin"
       ],
-      "score": 3
+      "score": 3,
+      "relevance": "epigenetics|cellular_senescence"
     },
     {
       "title": "Periodontitis Drives Osteoporosis via the Oral\u2013Gut Microbiome Axis",
@@ -66,7 +70,8 @@
         "periodontitis",
         "metabolomics"
       ],
-      "score": 3
+      "score": 3,
+      "relevance": "microbiome|bone_aging"
     },
     {
       "title": "The Liver Clock Tunes Skeletal Muscle Mitochondrial Function",
@@ -79,7 +84,8 @@
         "skeletal muscle",
         "aging"
       ],
-      "score": 3
+      "score": 3,
+      "relevance": "circadian|mitochondria"
     },
     {
       "title": "Decoding Early-Onset Aging After Cancer in Young Adult Survivors",
@@ -92,7 +98,8 @@
         "biomarkers",
         "hallmarks"
       ],
-      "score": 3
+      "score": 3,
+      "relevance": "epigenetic_clocks|cancer"
     },
     {
       "title": "Mitochondrial Variants Score Predicts Brain Functional Connectivity and Premature Aging",
@@ -105,7 +112,8 @@
         "functional connectivity",
         "biomarkers"
       ],
-      "score": 3
+      "score": 3,
+      "relevance": "mitochondria|brain_aging"
     }
   ]
 }
