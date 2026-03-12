@@ -1,65 +1,111 @@
 {
   "date": "2026-03-12",
-  "subjectLine": "Skull bone marrow delivers new neurons to the aging brain 🧠",
-  "borisTake": "The ANKRD1 gene therapy paper is the one that caught my eye this week — it's not just neurogenesis in principle, it's a systemically deliverable vector that measurably rescues spatial memory in aged mice via a bone marrow niche nobody was really watching. If this translates even 30% to humans, it changes the conversation around cognitive aging interventions beyond cholinesterase inhibitors and GLP-1.",
-  "leadAnalysis": "Researchers used single-cell RNA sequencing to identify a discrete subpopulation of craniofacial bone marrow mesenchymal stromal cells (BMSCs) that retain neurogenic potential — competence inherited from neural crest stem cells during embryonic development but progressively silenced with age. ANKRD1 was identified as the transcriptional gatekeeper: it directly engages enhancer elements of SOX2 and NESTIN, preserving neural-lineage chromatin in an open, accessible state. Crucially, a neuron-targeted viral delivery of ANKRD1 — administered systemically but promoter-restricted to bone marrow cells — rescued spatial memory deficits in aged mice. The clinical relevance is immediate: this is a targetable, peripheral niche rather than requiring direct CNS delivery, which dramatically lowers the translational bar.",
-  "oneNumber": "24h | Time for MSCs to fully internalize transplanted mitochondria via endocytosis — unlocking the mechanistic roadmap for mitochondrial therapy",
+  "subjectLine": "Skull bone marrow delivers new neurons to the aging brain \ud83e\udde0",
+  "borisTake": "The ANKRD1 gene therapy paper is the one that caught my eye this week \u2014 it's not just neurogenesis in principle, it's a systemically deliverable vector that measurably rescues spatial memory in aged mice via a bone marrow niche nobody was really watching. If this translates even 30% to humans, it changes the conversation around cognitive aging interventions beyond cholinesterase inhibitors and GLP-1.",
+  "leadAnalysis": "Researchers used single-cell RNA sequencing to identify a discrete subpopulation of craniofacial bone marrow mesenchymal stromal cells (BMSCs) that retain neurogenic potential \u2014 competence inherited from neural crest stem cells during embryonic development but progressively silenced with age. ANKRD1 was identified as the transcriptional gatekeeper: it directly engages enhancer elements of SOX2 and NESTIN, preserving neural-lineage chromatin in an open, accessible state. Crucially, a neuron-targeted viral delivery of ANKRD1 \u2014 administered systemically but promoter-restricted to bone marrow cells \u2014 rescued spatial memory deficits in aged mice. The clinical relevance is immediate: this is a targetable, peripheral niche rather than requiring direct CNS delivery, which dramatically lowers the translational bar.",
+  "oneNumber": "24h | Time for MSCs to fully internalize transplanted mitochondria via endocytosis \u2014 unlocking the mechanistic roadmap for mitochondrial therapy",
   "papers": [
     {
       "title": "ANKRD1 Sustains a Neurogenic BMSC Niche and Counters Cognitive Aging",
       "url": "https://doi.org/10.1038/s41368-026-00428-5",
       "source": "Fight Aging / Journal of Dental Research",
       "summary": "A craniofacial bone marrow stem cell subpopulation retains latent neurogenic potential regulated by ANKRD1. Systemic gene therapy delivery rescued spatial memory in aged mice, identifying a peripheral therapeutic target for cognitive aging.",
-      "tags": ["neurogenesis", "gene therapy", "cognitive aging"]
+      "tags": [
+        "neurogenesis",
+        "gene therapy",
+        "cognitive aging"
+      ],
+      "score": 5
     },
     {
       "title": "Uptake Mechanisms and Functions of Isolated Mitochondria in Mesenchymal Stromal Cells",
       "url": "https://doi.org/10.1038/s41598-025-28494-5",
       "source": "Fight Aging / Scientific Reports",
-      "summary": "Mapped the endocytic pathways by which recipient MSCs internalize donor mitochondria within 24 hours while preserving their functional activity. Multiple endocytosis routes operate redundantly — increasing robustness of mitochondrial transplantation approaches.",
-      "tags": ["mitochondria", "transplantation", "MSC"]
+      "summary": "Mapped the endocytic pathways by which recipient MSCs internalize donor mitochondria within 24 hours while preserving their functional activity. Multiple endocytosis routes operate redundantly \u2014 increasing robustness of mitochondrial transplantation approaches.",
+      "tags": [
+        "mitochondria",
+        "transplantation",
+        "MSC"
+      ],
+      "score": 4
     },
     {
-      "title": "Fenofibrate Delays Aging via the PPARα–CPT1C Axis",
+      "title": "Fenofibrate Delays Aging via the PPAR\u03b1\u2013CPT1C Axis",
       "url": "https://doi.org/10.1016/j.phrs.2026.108154",
       "source": "Fight Aging / Pharmacological Research",
-      "summary": "Fenofibrate — a widely prescribed, safe fibrate already in clinical use — delays systemic aging and reverses cellular senescence in multiple mouse models via PPARα-dependent upregulation of CPT1C, restoring mitochondrial function and clearing lipid accumulation in senescent cells.",
-      "tags": ["senescence", "drug repurposing", "PPARα", "mitochondria"]
+      "summary": "Fenofibrate \u2014 a widely prescribed, safe fibrate already in clinical use \u2014 delays systemic aging and reverses cellular senescence in multiple mouse models via PPAR\u03b1-dependent upregulation of CPT1C, restoring mitochondrial function and clearing lipid accumulation in senescent cells.",
+      "tags": [
+        "senescence",
+        "drug repurposing",
+        "PPAR\u03b1",
+        "mitochondria"
+      ],
+      "score": 4
     },
     {
       "title": "Hypoxia Suppresses Senescence via Epigenetic Stabilisation",
       "url": "https://doi.org/10.4062/biomolther.2026.014",
       "source": "Fight Aging / Biomolecules & Therapeutics",
       "summary": "Hypoxia and hypoxia-mimetic compounds delay cellular senescence by limiting the catalytic activity of histone lysine demethylases, stabilising heterochromatin and preserving nuclear lamina integrity. Opens a pathway to pharmacological interventions that mimic beneficial stress responses without true oxygen deprivation.",
-      "tags": ["senescence", "epigenetics", "hypoxia", "chromatin"]
+      "tags": [
+        "senescence",
+        "epigenetics",
+        "hypoxia",
+        "chromatin"
+      ],
+      "score": 3
     },
     {
-      "title": "Periodontitis Drives Osteoporosis via the Oral–Gut Microbiome Axis",
+      "title": "Periodontitis Drives Osteoporosis via the Oral\u2013Gut Microbiome Axis",
       "url": "https://doi.org/10.1038/s41368-025-00415-2",
       "source": "Fight Aging / International Journal of Oral Science",
-      "summary": "Salivary microbiota from periodontitis patients suppresses tryptophan metabolism in the gut, reducing the metabolite ILA which normally inhibits osteoclast differentiation. ILA supplementation rescued bone loss in the mouse model — a clinically tractable intervention for a very common age-related pathway.",
-      "tags": ["microbiome", "bone aging", "periodontitis", "metabolomics"]
+      "summary": "Salivary microbiota from periodontitis patients suppresses tryptophan metabolism in the gut, reducing the metabolite ILA which normally inhibits osteoclast differentiation. ILA supplementation rescued bone loss in the mouse model \u2014 a clinically tractable intervention for a very common age-related pathway.",
+      "tags": [
+        "microbiome",
+        "bone aging",
+        "periodontitis",
+        "metabolomics"
+      ],
+      "score": 3
     },
     {
       "title": "The Liver Clock Tunes Skeletal Muscle Mitochondrial Function",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41486525/",
       "source": "PubMed / Journal of Biological Rhythms",
-      "summary": "Circadian rhythm coordination between the liver and skeletal muscle regulates mitochondrial transcriptional programs — with implications for why circadian disruption in aging contributes to metabolic decline and muscle dysfunction.",
-      "tags": ["circadian", "mitochondria", "skeletal muscle", "aging"]
+      "summary": "Circadian rhythm coordination between the liver and skeletal muscle regulates mitochondrial transcriptional programs \u2014 with implications for why circadian disruption in aging contributes to metabolic decline and muscle dysfunction.",
+      "tags": [
+        "circadian",
+        "mitochondria",
+        "skeletal muscle",
+        "aging"
+      ],
+      "score": 3
     },
     {
       "title": "Decoding Early-Onset Aging After Cancer in Young Adult Survivors",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41749897/",
       "source": "PubMed / Cancers",
-      "summary": "Characterises the hallmarks and biomarkers of accelerated aging in childhood and young adult cancer survivors — a population where treatment-induced aging provides a natural experiment to understand compressed biological age advancement and potential reversal strategies.",
-      "tags": ["accelerated aging", "cancer survivors", "biomarkers", "hallmarks"]
+      "summary": "Characterises the hallmarks and biomarkers of accelerated aging in childhood and young adult cancer survivors \u2014 a population where treatment-induced aging provides a natural experiment to understand compressed biological age advancement and potential reversal strategies.",
+      "tags": [
+        "accelerated aging",
+        "cancer survivors",
+        "biomarkers",
+        "hallmarks"
+      ],
+      "score": 3
     },
     {
       "title": "Mitochondrial Variants Score Predicts Brain Functional Connectivity and Premature Aging",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41479401/",
       "source": "PubMed / Human Brain Mapping",
-      "summary": "A functional impact score of mitochondrial DNA variants correlates with reduced brain functional connectivity in young adults, suggesting that mitochondrial genetic burden accelerates neural aging decades before clinical manifestation — a potential early biomarker window.",
-      "tags": ["mitochondrial DNA", "brain aging", "functional connectivity", "biomarkers"]
+      "summary": "A functional impact score of mitochondrial DNA variants correlates with reduced brain functional connectivity in young adults, suggesting that mitochondrial genetic burden accelerates neural aging decades before clinical manifestation \u2014 a potential early biomarker window.",
+      "tags": [
+        "mitochondrial DNA",
+        "brain aging",
+        "functional connectivity",
+        "biomarkers"
+      ],
+      "score": 3
     }
   ]
 }
