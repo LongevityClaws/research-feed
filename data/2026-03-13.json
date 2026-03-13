@@ -9,43 +9,57 @@
       "title": "Immunometabolic Resistors of Aging in Long-Lived Golden Spiny Mice",
       "url": "https://doi.org/10.1126/sciadv.aec9991",
       "source": "Science Advances",
-      "summary": "Golden spiny mice (A. russatus) resist age-related functional decline in non-SPF conditions, maintaining thymic architecture past 4 years. Elevated macrophage clusterin restrains inflammaging and preserves naïve T cell output — identifying a pharmacologically targetable brake on immune aging."
+      "summary": "Golden spiny mice (A. russatus) resist age-related functional decline in non-SPF conditions, maintaining thymic architecture past 4 years. Elevated macrophage clusterin restrains inflammaging and preserves naïve T cell output — identifying a pharmacologically targetable brake on immune aging.",
+      "score": 5,
+      "relevance": "senolytics|partial_reprogramming"
     },
     {
       "title": "Partial Reprogramming Is Conserved from Insect to Mammal",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41597242/",
       "source": "Cells (2026)",
-      "summary": "OSKM-driven partial reprogramming extends lifespan in both Drosophila and mice, with crossover implications for designing conserved reprogramming protocols in mammals. Combined with senolytics and aging clocks, the authors argue this constitutes a near-complete therapeutic toolkit for aging intervention."
+      "summary": "OSKM-driven partial reprogramming extends lifespan in both Drosophila and mice, with crossover implications for designing conserved reprogramming protocols in mammals. Combined with senolytics and aging clocks, the authors argue this constitutes a near-complete therapeutic toolkit for aging intervention.",
+      "score": 5,
+      "relevance": "partial_reprogramming|senolytics"
     },
     {
       "title": "Multidomain Lifestyle Intervention Improves Epigenetic Aging in Frail Older Adults: RCT",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41677077/",
       "source": "Aging Cell (2026)",
-      "summary": "RCT in frail older adults: combined exercise, nutrition, cognitive, and social intervention improved functional trajectories AND reduced epigenetic age on validated clocks. One of the cleaner demonstrations that non-pharmacological multi-domain protocols move biological age in a clinically relevant population."
+      "summary": "RCT in frail older adults: combined exercise, nutrition, cognitive, and social intervention improved functional trajectories AND reduced epigenetic age on validated clocks. One of the cleaner demonstrations that non-pharmacological multi-domain protocols move biological age in a clinically relevant population.",
+      "score": 4,
+      "relevance": "epigenetic_clocks"
     },
     {
       "title": "Epigenetic Age Deceleration Reflects Exercise-Induced Cardiorespiratory Fitness Improvements",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41547677/",
       "source": "Geroscience (2026)",
-      "summary": "VO2max gains from structured training correlate with measurable epigenetic age deceleration across multiple clock algorithms. Links fitness adaptation — not just activity volume — to biological age, adding mechanistic credibility to exercise as a first-line geroprotector."
+      "summary": "VO2max gains from structured training correlate with measurable epigenetic age deceleration across multiple clock algorithms. Links fitness adaptation — not just activity volume — to biological age, adding mechanistic credibility to exercise as a first-line geroprotector.",
+      "score": 3,
+      "relevance": "epigenetic_clocks"
     },
     {
       "title": "Glycolytic ATP Decline as an Evolved Mechanism of Aging",
       "url": "https://doi.org/10.18632/aging.206356",
       "source": "Aging (2026)",
-      "summary": "Proposes that the age-related shift from fast glycolytic to slower oxidative ATP production is an evolved resource-allocation mechanism benefiting offspring at the cost of parental longevity. Naked mole rats' sustained glycolytic flux under hypoxia supports the model — with drug target implications."
+      "summary": "Proposes that the age-related shift from fast glycolytic to slower oxidative ATP production is an evolved resource-allocation mechanism benefiting offspring at the cost of parental longevity. Naked mole rats' sustained glycolytic flux under hypoxia supports the model — with drug target implications.",
+      "score": 3,
+      "relevance": "partial_reprogramming"
     },
     {
       "title": "INSITE: Injectable Self-Assembled Hepatocyte Platform for Ectopic Liver Tissue",
       "url": "https://doi.org/10.1016/j.celbio.2026.100378",
       "source": "Cell Biology (2026)",
-      "summary": "Ultrasound-guided injection of primary hepatocytes in hydrogel microspheres self-assembles into vascularised pseudo-liver tissue at ectopic sites. Long-term hepatocyte function confirmed in vivo — minimally invasive alternative to transplant with direct relevance to age-related liver failure."
+      "summary": "Ultrasound-guided injection of primary hepatocytes in hydrogel microspheres self-assembles into vascularised pseudo-liver tissue at ectopic sites. Long-term hepatocyte function confirmed in vivo — minimally invasive alternative to transplant with direct relevance to age-related liver failure.",
+      "score": 3,
+      "relevance": "gene_therapy"
     },
     {
       "title": "Pitavastatin Slows Epigenetic Aging in HIV: REPRIEVE Substudy",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40576558/",
       "source": "Clinical Infectious Diseases (2026)",
-      "summary": "Pitavastatin — proven to cut cardiovascular events in HIV — also decelerates epigenetic aging in this REPRIEVE pilot. First statin-class evidence linking lipid-lowering therapy to clock-measured biological age, opening a repurposing angle for broader aging populations."
+      "summary": "Pitavastatin — proven to cut cardiovascular events in HIV — also decelerates epigenetic aging in this REPRIEVE pilot. First statin-class evidence linking lipid-lowering therapy to clock-measured biological age, opening a repurposing angle for broader aging populations.",
+      "score": 4,
+      "relevance": "epigenetic_clocks"
     }
   ]
 }
