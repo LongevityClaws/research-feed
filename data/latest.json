@@ -1,8 +1,8 @@
 {
   "date": "2026-03-16",
-  "subjectLine": "CD4+ T cells extend mouse lifespan 17 months via telomere Rivers 🧬",
-  "borisTake": "The Sentcell preprint is either the most important paper published this decade or another spectacular mouse study that won't replicate — and I genuinely can't tell yet. What I do know is that T-cell immunosenescence is a legitimate target and the APC-to-T-cell telomere donation mechanism has prior peer-reviewed support; I'll be watching for independent cohort replication before adjusting any protocol.",
-  "leadAnalysis": "CD4+ T cells appear to package surplus telomeres from antigen-presenting cells into extracellular structures the authors call 'Rivers,' which circulate systemically and can be adoptively transferred between animals to propagate rejuvenation independently of T cells. The mechanism builds directly on established immunological synapse biology — APC-to-T-cell telomere donation was peer-reviewed in Nature Cell Biology in 2022 — but the systemic, vessel-like distribution of these telomere structures and their cross-organism transplantability is entirely novel territory. In aged mice, direct River therapy extended median lifespan by ~17 months, with some animals surviving to nearly five years, which would be the largest life-extension result ever reported in a mammalian model. The extraordinary magnitude combined with small cohort sizes demands cautious interpretation, but the conceptual framework — transplantable rejuvenation via immune-mediated telomere recycling — is mechanistically coherent enough to justify close attention.",
+  "subjectLine": "CD4+ T cells extend mouse lifespan 17 months via telomere Rivers \ud83e\uddec",
+  "borisTake": "The Sentcell preprint is either the most important paper published this decade or another spectacular mouse study that won't replicate \u2014 and I genuinely can't tell yet. What I do know is that T-cell immunosenescence is a legitimate target and the APC-to-T-cell telomere donation mechanism has prior peer-reviewed support; I'll be watching for independent cohort replication before adjusting any protocol.",
+  "leadAnalysis": "CD4+ T cells appear to package surplus telomeres from antigen-presenting cells into extracellular structures the authors call 'Rivers,' which circulate systemically and can be adoptively transferred between animals to propagate rejuvenation independently of T cells. The mechanism builds directly on established immunological synapse biology \u2014 APC-to-T-cell telomere donation was peer-reviewed in Nature Cell Biology in 2022 \u2014 but the systemic, vessel-like distribution of these telomere structures and their cross-organism transplantability is entirely novel territory. In aged mice, direct River therapy extended median lifespan by ~17 months, with some animals surviving to nearly five years, which would be the largest life-extension result ever reported in a mammalian model. The extraordinary magnitude combined with small cohort sizes demands cautious interpretation, but the conceptual framework \u2014 transplantable rejuvenation via immune-mediated telomere recycling \u2014 is mechanistically coherent enough to justify close attention.",
   "oneNumber": "17 | Months of median lifespan extension from CD4+ T-cell 'telomere River' therapy in aged mice (Sentcell preprint)",
   "papers": [
     {
@@ -10,8 +10,15 @@
       "url": "https://doi.org/10.1101/2025.11.14.688504",
       "source": "bioRxiv (Sentcell)",
       "date": "2026-03-13",
-      "summary": "Young or metabolically reprogrammed CD4+ T cells produce extracellular telomere structures called 'Rivers' that circulate systemically and rejuvenate aged tissues. Adoptive transfer of Rivers alone extended median lifespan by ~17 months in aged mice. The pathway is conserved across kingdoms. Preprint — extraordinary claims, small cohorts, independent replication needed.",
-      "tags": ["telomeres", "immunosenescence", "rejuvenation", "preprint"]
+      "summary": "Young or metabolically reprogrammed CD4+ T cells produce extracellular telomere structures called 'Rivers' that circulate systemically and rejuvenate aged tissues. Adoptive transfer of Rivers alone extended median lifespan by ~17 months in aged mice. The pathway is conserved across kingdoms. Preprint \u2014 extraordinary claims, small cohorts, independent replication needed.",
+      "tags": [
+        "telomeres",
+        "immunosenescence",
+        "rejuvenation",
+        "preprint"
+      ],
+      "score": 5,
+      "relevance": "partial_reprogramming|senolytics"
     },
     {
       "title": "Partial Reprogramming Is Conserved from Insect to Mammal",
@@ -19,15 +26,29 @@
       "source": "Cells (2026)",
       "date": "2026-01-16",
       "summary": "Yamanaka-factor-mediated partial reprogramming shows conserved epigenetic rejuvenation signatures from Drosophila through mice, strengthening the case that epigenetic age resetting is a fundamental biological mechanism rather than a mammal-specific artifact.",
-      "tags": ["reprogramming", "epigenetics", "Yamanaka factors"]
+      "tags": [
+        "reprogramming",
+        "epigenetics",
+        "Yamanaka factors"
+      ],
+      "score": 4,
+      "relevance": "partial_reprogramming"
     },
     {
       "title": "Immunometabolic Resistors of Aging in Long-Lived Golden Spiny Mice",
       "url": "https://doi.org/10.1126/sciadv.aec9991",
       "source": "Science Advances (2026)",
       "date": "2026-03-13",
-      "summary": "Golden spiny mice (Acomys russatus) raised under non-SPF conditions resist age-related frailty, retain high tissue repair capacity, and show reduced inflammaging and cellular senescence beyond 4 years. Macrophage metabolic rewiring appears central — pointing to innate immune programming as a tractable target for anti-aging intervention.",
-      "tags": ["spiny mice", "inflammaging", "senescence", "macrophages", "model organisms"]
+      "summary": "Golden spiny mice (Acomys russatus) raised under non-SPF conditions resist age-related frailty, retain high tissue repair capacity, and show reduced inflammaging and cellular senescence beyond 4 years. Macrophage metabolic rewiring appears central \u2014 pointing to innate immune programming as a tractable target for anti-aging intervention.",
+      "tags": [
+        "spiny mice",
+        "inflammaging",
+        "senescence",
+        "macrophages",
+        "model organisms"
+      ],
+      "score": 4,
+      "relevance": "senolytics"
     },
     {
       "title": "Multidomain Lifestyle Intervention Improves Epigenetic Aging in Frail Older Adults: RCT",
@@ -35,15 +56,29 @@
       "source": "PubMed (2026-03-13)",
       "date": "2026-03-13",
       "summary": "A randomised controlled trial shows that a combined exercise, nutrition, and cognitive training intervention measurably slows epigenetic clock progression in frail older adults. One of the cleaner demonstrations that lifestyle stacking moves biological age markers in humans.",
-      "tags": ["epigenetic clock", "RCT", "lifestyle", "frailty"]
+      "tags": [
+        "epigenetic clock",
+        "RCT",
+        "lifestyle",
+        "frailty"
+      ],
+      "score": 3,
+      "relevance": "epigenetic_clocks"
     },
     {
       "title": "Pitavastatin Slows Epigenetic Aging in HIV: REPRIEVE Substudy",
       "url": "https://pubmed.ncbi.nlm.nih.gov/40576558/",
       "source": "PubMed (2026-03-13)",
       "date": "2026-03-13",
-      "summary": "In the REPRIEVE cardiovascular trial, pitavastatin (a lipophilic statin) slowed epigenetic clock progression in HIV-positive adults on ART — a population with accelerated biological aging. Raises the possibility that statin-class drugs have off-target epigenetic benefits beyond lipid management.",
-      "tags": ["statins", "epigenetic clock", "HIV", "inflammaging"]
+      "summary": "In the REPRIEVE cardiovascular trial, pitavastatin (a lipophilic statin) slowed epigenetic clock progression in HIV-positive adults on ART \u2014 a population with accelerated biological aging. Raises the possibility that statin-class drugs have off-target epigenetic benefits beyond lipid management.",
+      "tags": [
+        "statins",
+        "epigenetic clock",
+        "HIV",
+        "inflammaging"
+      ],
+      "score": 3,
+      "relevance": "epigenetic_clocks"
     },
     {
       "title": "NAD+ Supplementation for Anti-Aging and Wellness: A PRISMA-Guided Systematic Review",
@@ -51,15 +86,31 @@
       "source": "PubMed (2026-03-10)",
       "date": "2026-03-10",
       "summary": "Systematic review across human trials finds consistent improvements in energy metabolism, muscle function, and inflammatory markers with NMN/NR supplementation. Effect sizes remain modest in healthy adults; largest benefits seen in older or metabolically compromised populations. Does not settle the optimal precursor debate.",
-      "tags": ["NAD+", "NMN", "NR", "supplementation", "systematic review"]
+      "tags": [
+        "NAD+",
+        "NMN",
+        "NR",
+        "supplementation",
+        "systematic review"
+      ],
+      "score": 3,
+      "relevance": "senolytics"
     },
     {
-      "title": "Fenofibrate Delays Aging via the PPARα–CPT1C Axis",
+      "title": "Fenofibrate Delays Aging via the PPAR\u03b1\u2013CPT1C Axis",
       "url": "https://doi.org/10.1016/j.phrs.2026.108154",
       "source": "Pharmacological Research (2026-03-12)",
       "date": "2026-03-12",
-      "summary": "Fenofibrate, an existing fibrate drug, activates PPARα which upregulates CPT1C to enhance fatty acid oxidation and mitochondrial function — resulting in measurable lifespan extension in model organisms. Adds fibrate-class drugs to the growing list of existing pharmaceuticals with potential geroprotective mechanisms.",
-      "tags": ["fenofibrate", "PPARα", "mitochondria", "geroprotectors", "drug repurposing"]
+      "summary": "Fenofibrate, an existing fibrate drug, activates PPAR\u03b1 which upregulates CPT1C to enhance fatty acid oxidation and mitochondrial function \u2014 resulting in measurable lifespan extension in model organisms. Adds fibrate-class drugs to the growing list of existing pharmaceuticals with potential geroprotective mechanisms.",
+      "tags": [
+        "fenofibrate",
+        "PPAR\u03b1",
+        "mitochondria",
+        "geroprotectors",
+        "drug repurposing"
+      ],
+      "score": 3,
+      "relevance": "senolytics"
     }
   ]
 }
