@@ -1,175 +1,39 @@
 {
-  "description": "URLs already featured in a digest. Checked before each new digest run to prevent duplicates.",
-  "seen": [
+  "items": [
     {
-      "url": "https://doi.org/10.1111/acel.70425",
-      "date": "2026-03-02",
-      "title": "Ageing Through the Looking-Glass: The Different Flavours of Clonal Haematopoiesis"
+      "url": "https://doi.org/10.1101/2025.11.14.688504",
+      "title": "CD4+ T cells confer transplantable rejuvenation via Rivers of telomeres",
+      "date": "2026-03-16"
     },
     {
       "url": "https://pubmed.ncbi.nlm.nih.gov/41597242/",
-      "date": "2026-03-02",
-      "title": "Partial Reprogramming Is Conserved from Insect to Mammal"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41462575/",
-      "date": "2026-03-02",
-      "title": "Senolytic-Resistant Senescent Cells Have a Distinct SASP Profile"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41528804/",
-      "date": "2026-03-02",
-      "title": "Molecular time machines unleashed: small-molecule-driven reprogramming"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41168880/",
-      "date": "2026-03-02",
-      "title": "Integrative Omics Reveal Female-Specific Benefits of p16(+) Cell Clearance"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41751214/",
-      "date": "2026-03-02",
-      "title": "Mechanistic Links Between the Gut Microbiome and Longevity Therapeutics"
-    },
-    {
-      "url": "https://doi.org/10.1038/s41586-026-10169-4",
-      "date": "2026-03-09",
-      "title": "SuperAgers Carry a Distinct Hippocampal Neurogenesis Resilience Signature"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41625068/",
-      "date": "2026-03-09",
-      "title": "FOXO4-DRI Clears Senescent Endothelial Cells via P53 Pathway"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41781622/",
-      "date": "2026-03-09",
-      "title": "Dietary PUFA:MUFA Ratio Controls T Cell Ferroptosis Resistance"
-    },
-    {
-      "url": "https://onlinelibrary.wiley.com/doi/10.1111/acel.70435",
-      "date": "2026-03-09",
-      "title": "Inflammaging Drives Senescent-Like Neutrophils That Worsen Pneumonia"
-    },
-    {
-      "url": "https://doi.org/10.3389/fragi.2025.1731621",
-      "date": "2026-03-09",
-      "title": "The Gut and Circulating Virome: Emerging Players in Aging and Longevity"
-    },
-    {
-      "url": "https://doi.org/10.64898/2026.02.10.705198",
-      "date": "2026-03-09",
-      "title": "FMO-2 Is the Common Downstream Effector of Multiple C. elegans Longevity Pathways"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41593189/",
-      "date": "2026-03-09",
-      "title": "SRT2104 Enhances Mitophagy and Reduces Senescence in Auditory Cells"
-    },
-    {
-      "url": "https://doi.org/10.1186/s13024-026-00927-3",
-      "date": "2026-03-10",
-      "title": "Systemic Complement Factors in Aging, Alzheimer Disease and Other Dementias: A Longitudinal Study Over 10 Years"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41407851/",
-      "date": "2026-03-10",
-      "title": "Transient Hepatic Reconstitution of Trophic Factors Enhances Aged Immunity"
-    },
-    {
-      "url": "https://journal.hep.com.cn/fmd/EN/10.1007/s11684-025-1181-z",
-      "date": "2026-03-10",
-      "title": "Macrophage SEMA7A Drives Atherosclerosis via Integrin b1/JNK/MSR1 Axis"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41102562/",
-      "date": "2026-03-10",
-      "title": "MRI-Based Multi-Organ Biological Age Clocks for Healthy Aging and Disease Assessment"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41655607/",
-      "date": "2026-03-10",
-      "title": "NAD+ Supplementation for Anti-Aging and Wellness: A PRISMA-Guided Systematic Review"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40971573/",
-      "date": "2026-03-10",
-      "title": "From Cell Reprogramming to Tissue Rejuvenation: Countering Aging by Targeting a Gerozyme"
-    },
-    {
-      "url": "https://doi.org/10.1088/2631-7990/ae3923",
-      "date": "2026-03-10",
-      "title": "Electric Field EHD Bioprinting Produces Aligned Skeletal Muscle That Restores Function In Vivo"
-    },
-    {
-      "url": "https://doi.org/10.1038/s41368-026-00428-5",
-      "date": "2026-03-12",
-      "title": "ANKRD1 Sustains a Neurogenic BMSC Niche and Counters Cognitive Aging"
-    },
-    {
-      "url": "https://doi.org/10.1038/s41598-025-28494-5",
-      "date": "2026-03-12",
-      "title": "Uptake Mechanisms and Functions of Isolated Mitochondria in Mesenchymal Stromal Cells"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.phrs.2026.108154",
-      "date": "2026-03-12",
-      "title": "Fenofibrate Delays Aging via the PPAR\u03b1\u2013CPT1C Axis"
-    },
-    {
-      "url": "https://doi.org/10.4062/biomolther.2026.014",
-      "date": "2026-03-12",
-      "title": "Hypoxia Suppresses Senescence via Epigenetic Stabilisation"
-    },
-    {
-      "url": "https://doi.org/10.1038/s41368-025-00415-2",
-      "date": "2026-03-12",
-      "title": "Periodontitis Drives Osteoporosis via the Oral\u2013Gut Microbiome Axis"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41486525/",
-      "date": "2026-03-12",
-      "title": "The Liver Clock Tunes Skeletal Muscle Mitochondrial Function"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41749897/",
-      "date": "2026-03-12",
-      "title": "Decoding Early-Onset Aging After Cancer in Young Adult Survivors"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41479401/",
-      "date": "2026-03-12",
-      "title": "Mitochondrial Variants Score Predicts Brain Functional Connectivity and Premature Aging"
+      "title": "Partial Reprogramming Is Conserved from Insect to Mammal",
+      "date": "2026-03-16"
     },
     {
       "url": "https://doi.org/10.1126/sciadv.aec9991",
-      "date": "2026-03-13",
-      "title": "Immunometabolic Resistors of Aging in Long-Lived Golden Spiny Mice"
+      "title": "Immunometabolic Resistors of Aging in Long-Lived Golden Spiny Mice",
+      "date": "2026-03-16"
     },
     {
       "url": "https://pubmed.ncbi.nlm.nih.gov/41677077/",
-      "date": "2026-03-13",
-      "title": "Multidomain Lifestyle Intervention Improves Epigenetic Aging in Frail Older Adults: RCT"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41547677/",
-      "date": "2026-03-13",
-      "title": "Epigenetic Age Deceleration Reflects Exercise-Induced Cardiorespiratory Fitness Improvements"
-    },
-    {
-      "url": "https://doi.org/10.18632/aging.206356",
-      "date": "2026-03-13",
-      "title": "Glycolytic ATP Decline as an Evolved Mechanism of Aging"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.celbio.2026.100378",
-      "date": "2026-03-13",
-      "title": "INSITE: Injectable Self-Assembled Hepatocyte Platform for Ectopic Liver Tissue"
+      "title": "Multidomain Lifestyle Intervention Improves Epigenetic Aging in Frail Older Adults: RCT",
+      "date": "2026-03-16"
     },
     {
       "url": "https://pubmed.ncbi.nlm.nih.gov/40576558/",
-      "date": "2026-03-13",
-      "title": "Pitavastatin Slows Epigenetic Aging in HIV: REPRIEVE Substudy"
+      "title": "Pitavastatin Slows Epigenetic Aging in HIV: REPRIEVE Substudy",
+      "date": "2026-03-16"
+    },
+    {
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41655607/",
+      "title": "NAD+ Supplementation for Anti-Aging and Wellness: A PRISMA-Guided Systematic Review",
+      "date": "2026-03-16"
+    },
+    {
+      "url": "https://doi.org/10.1016/j.phrs.2026.108154",
+      "title": "Fenofibrate Delays Aging via the PPAR\u03b1\u2013CPT1C Axis",
+      "date": "2026-03-16"
     }
   ]
 }
