@@ -1,25 +1,36 @@
 {
   "date": "2026-03-18",
-  "subjectLine": "Microglia seed Alzheimer's plaques — not just clear them 🧠",
-  "borisTake": "Microglia seeding amyloid is a proper paradigm shift — these aren't passive bystanders, they're co-manufacturers of the pathology we've been trying to clear. This reshapes how I think about neuroinflammation protocols and makes senolytic targeting of dysfunctional microglia look a lot more urgent.",
-  "leadAnalysis": "Researchers at VIB and Uniklinikum Erlangen have demonstrated that microglia don't only fail to clear amyloid-β — they actively remodel soluble Aβ42 into extracellular fibrils with high seeding activity, the same structures found in Alzheimer's patients' brains. The mechanism is perverse: microglia's normal phagocytic machinery, confronted with protein aggregates it cannot degrade, amplifies the problem by converting soluble peptides into highly contagious fibrillar seeds. This has direct implications for the 'activated microglia' phenotype increasingly targeted by senolytics and TREM2 agonists — we may need to intervene before the seeding cascade begins rather than after. The finding also helps explain persistent failures in passive immunotherapy approaches that cleared existing plaques without preventing new seeding.",
-  "oneNumber": "30% | Increase in mouse grip strength from a single gut bacterium — Roseburia inulinivorans — oral supplementation",
+  "subjectLine": "Microglia seed Alzheimer's plaques \u2014 not just clear them \ud83e\udde0",
+  "borisTake": "Microglia seeding amyloid is a proper paradigm shift \u2014 these aren't passive bystanders, they're co-manufacturers of the pathology we've been trying to clear. This reshapes how I think about neuroinflammation protocols and makes senolytic targeting of dysfunctional microglia look a lot more urgent.",
+  "leadAnalysis": "Researchers at VIB and Uniklinikum Erlangen have demonstrated that microglia don't only fail to clear amyloid-\u03b2 \u2014 they actively remodel soluble A\u03b242 into extracellular fibrils with high seeding activity, the same structures found in Alzheimer's patients' brains. The mechanism is perverse: microglia's normal phagocytic machinery, confronted with protein aggregates it cannot degrade, amplifies the problem by converting soluble peptides into highly contagious fibrillar seeds. This has direct implications for the 'activated microglia' phenotype increasingly targeted by senolytics and TREM2 agonists \u2014 we may need to intervene before the seeding cascade begins rather than after. The finding also helps explain persistent failures in passive immunotherapy approaches that cleared existing plaques without preventing new seeding.",
+  "oneNumber": "30% | Increase in mouse grip strength from a single gut bacterium \u2014 Roseburia inulinivorans \u2014 oral supplementation",
   "papers": [
     {
       "id": "1",
-      "title": "Microglia Seed Alzheimer's Plaques — Not Just Clear Them",
+      "title": "Microglia Seed Alzheimer's Plaques \u2014 Not Just Clear Them",
       "url": "https://vib.be/en#/news/brain-immune-cells-may-help-build-not-just-clear-alzheimers-plaques",
       "source": "VIB / Uniklinikum Erlangen",
-      "summary": "Cell studies show microglia actively remodel soluble Aβ42 into fibrillar seeds with high seeding activity — the same structures found in Alzheimer's brains. Flips the prevailing model of microglia as passive defenders against plaque buildup.",
-      "tags": ["neuro", "alzheimers", "microglia", "senescence"]
+      "summary": "Cell studies show microglia actively remodel soluble A\u03b242 into fibrillar seeds with high seeding activity \u2014 the same structures found in Alzheimer's brains. Flips the prevailing model of microglia as passive defenders against plaque buildup.",
+      "tags": [
+        "neuro",
+        "alzheimers",
+        "microglia",
+        "senescence"
+      ],
+      "score": 5
     },
     {
       "id": "2",
       "title": "Mouse Whole Brain Vitrified and Rewarmed With Preserved Neuronal Function",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41774797/",
-      "source": "PNAS / Friedrich-Alexander-Universität Erlangen",
-      "summary": "Using cryoprotective agents and rapid vitrification, researchers froze mouse brain slices and a complete brain — upon rewarming, much of the neuronal function was preserved. First demonstration of functional recovery after whole-brain cryopreservation.",
-      "tags": ["cryopreservation", "neuro", "milestone"]
+      "source": "PNAS / Friedrich-Alexander-Universit\u00e4t Erlangen",
+      "summary": "Using cryoprotective agents and rapid vitrification, researchers froze mouse brain slices and a complete brain \u2014 upon rewarming, much of the neuronal function was preserved. First demonstration of functional recovery after whole-brain cryopreservation.",
+      "tags": [
+        "cryopreservation",
+        "neuro",
+        "milestone"
+      ],
+      "score": 4
     },
     {
       "id": "3",
@@ -27,15 +38,27 @@
       "url": "https://doi.org/10.1136/gutjnl-2025-336980",
       "source": "Gut Journal",
       "summary": "A single gut bacterial species correlates with muscle strength across grip, leg press, and bench press in humans. Oral supplementation in mice increased forelimb grip strength ~30%, with metabolomic changes pointing to muscle fibre type shifts and purine pathway activation. The population declines with age.",
-      "tags": ["microbiome", "muscle", "sarcopenia", "probiotic"]
+      "tags": [
+        "microbiome",
+        "muscle",
+        "sarcopenia",
+        "probiotic"
+      ],
+      "score": 4
     },
     {
       "id": "4",
       "title": "Resistance Training Slows Brain Aging in 309-Person RCT",
       "url": "https://link.springer.com/article/10.1007/s11357-026-02141-x",
       "source": "GeroScience",
-      "summary": "Brain clock models analyzing MRI data from 309 adults (62–70 years) found that both heavy and moderate resistance training over one year measurably slowed brain aging. Effect held across intensities — moderate was comparable to heavy.",
-      "tags": ["exercise", "brain", "RCT", "aging"]
+      "summary": "Brain clock models analyzing MRI data from 309 adults (62\u201370 years) found that both heavy and moderate resistance training over one year measurably slowed brain aging. Effect held across intensities \u2014 moderate was comparable to heavy.",
+      "tags": [
+        "exercise",
+        "brain",
+        "RCT",
+        "aging"
+      ],
+      "score": 3
     },
     {
       "id": "5",
@@ -43,7 +66,13 @@
       "url": "https://lifespan.io/news/the-many-dangers-of-7-ketocholesterol/",
       "source": "Cyclarity Therapeutics / Lifespan.io",
       "summary": "Matthew O'Connor et al. publish a detailed review of how 7-ketocholesterol (7KC), an oxidized cholesterol, drives multi-tissue dysfunction. Relevant to Cyclarity's cyclodextrin-based clearance approach and the broader atherogenesis/longevity agenda.",
-      "tags": ["lipids", "atherogenesis", "senolytics", "cyclarity"]
+      "tags": [
+        "lipids",
+        "atherogenesis",
+        "senolytics",
+        "cyclarity"
+      ],
+      "score": 3
     },
     {
       "id": "6",
@@ -51,7 +80,13 @@
       "url": "https://lifespan.io/news/novel-mechanism-for-parkinsons-is-linked-to-atp-deficiency/",
       "source": "Lifespan.io",
       "summary": "ATP deficiency disrupts dopamine processing in synapses, leading to accumulation of the harmful protein species characteristic of Parkinson's disease. ATP supplementation was partially protective, opening a mitochondrial angle on neurodegeneration.",
-      "tags": ["parkinson", "mitochondria", "ATP", "synapse"]
+      "tags": [
+        "parkinson",
+        "mitochondria",
+        "ATP",
+        "synapse"
+      ],
+      "score": 3
     },
     {
       "id": "7",
@@ -59,7 +94,13 @@
       "url": "https://lifespan.io/news/fat-composition-affects-t-cell-mediated-immunity/",
       "source": "Lifespan.io",
       "summary": "The ratio between polyunsaturated and monounsaturated fatty acids affects T-cell viability, humoral immunity, and anti-tumor immune responses via ferroptosis pathways. Dietary fat composition turns out to matter substantially for immune longevity.",
-      "tags": ["immunity", "T-cells", "diet", "ferroptosis"]
+      "tags": [
+        "immunity",
+        "T-cells",
+        "diet",
+        "ferroptosis"
+      ],
+      "score": 3
     }
   ]
 }
