@@ -6,7 +6,8 @@ export type Paper = {
   source: string
   url: string
   summary: string
-  relevance: string
+  relevance?: string
+  tags?: string[]
   score: number
 }
 
@@ -125,10 +126,12 @@ function trackingPixel(emailId: string): string {
   return `<img src="${BASE_URL}/api/track/open?id=${emailId}" width="1" height="1" style="display:block;width:1px;height:1px;border:0" alt="" />`
 }
 
-function tags(relevance: string): string {
-  return relevance.split('|')
-    .map(r => `<span class="tag">${RELEVANCE_LABELS[r.trim()] ?? r.trim()}</span>`)
-    .join('')
+function tags(relevance: string | string[] | undefined): string {
+  if (!relevance) return ''
+  const items = Array.isArray(relevance)
+    ? relevance
+    : relevance.split('|').map(r => r.trim())
+  return items.map(r => `<span class="tag">${RELEVANCE_LABELS[r.trim()] ?? r.trim()}</span>`).join('')
 }
 
 function formattedDate(date: string): string {
@@ -147,7 +150,7 @@ function leadHtml(paper: Paper, analysis: string | undefined, emailId: string): 
       <div class="source">${paper.source.toUpperCase()}</div>
       <div class="lead-title"><a href="${href}">${paper.title}</a></div>
       <p class="lead-body">${analysis || paper.summary}</p>
-      <div>${tags(paper.relevance)}</div>
+      <div>${tags(paper.tags ?? paper.relevance)}</div>
     </div>`
 }
 
@@ -166,7 +169,7 @@ function restItemHtml(paper: Paper, emailId: string): string {
       <div class="source">${paper.source.toUpperCase()}</div>
       <div class="rest-title"><a href="${href}">${paper.title}</a></div>
       <p class="rest-body">${paper.summary}</p>
-      <div>${tags(paper.relevance)}</div>
+      <div>${tags(paper.tags ?? paper.relevance)}</div>
       <div style="margin-top:10px"><a href="${href}" class="read-more">Read →</a></div>
     </div>`
 }
@@ -246,7 +249,7 @@ function buildFreeDigestHtml(digest: DigestData, email: string): string {
       <div class="lead-title">${lead.title}</div>
       <p class="lead-body">${teaser}</p>
       <p class="paywall"><strong>[Members only]</strong> Full analysis available to paid members. <a href="${BASE_URL}/subscribe">Upgrade — $12/month →</a></p>
-      <div>${tags(lead.relevance)}</div>
+      <div>${tags(lead.tags ?? lead.relevance)}</div>
     </div>` : ''
 
   const borisSection = `

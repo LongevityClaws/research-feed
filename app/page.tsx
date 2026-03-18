@@ -59,7 +59,10 @@ export default function Home() {
           </p>
           <div className="paper-card-meta">
             <span className="tag">{teaser.source}</span>
-            {teaser.relevance.split('|').map(r => (
+            {(Array.isArray((teaser as any).tags)
+              ? (teaser as any).tags
+              : ((teaser as any).relevance ?? '').split('|').map((r: string) => r.trim()).filter(Boolean)
+            ).map((r: string) => (
               <span key={r} className="tag tag-accent">
                 {RELEVANCE_LABELS[r] ?? r}
               </span>
