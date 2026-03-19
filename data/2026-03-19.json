@@ -1,58 +1,107 @@
 {
   "date": "2026-03-19",
-  "subjectLine": "Combo longevity therapy proves additive in 1,000 mice 🧬",
-  "borisTake": "This is the first empirical proof that SENS-style damage-repair stacking actually compounds — not the metabolic-tweak combinations that Brian Kennedy showed cancel each other out. The takeaway for protocol design: single-dose senolytics clearly isn't enough, damage re-accumulates, and cyclic D+Q or navitoclax looks increasingly like the right call.",
-  "leadAnalysis": "The LEV Foundation's RMR1 study is the first large-scale empirical test of the damage-repair synergy hypothesis: that combining therapies targeting distinct categories of age damage produces additive rather than antagonistic effects. With 1,000 mice across 10 subgroups per sex, starting treatment at 18 months (late middle age), it had the statistical power to actually resolve interactions — something most longevity trials can't claim. The result is meaningful but nuanced: a clear rectangularization of the survival curve (more mice reaching late life) with no extension of maximum lifespan, which tells us that single-dose damage repair has a limited efficacy window because the damage re-accumulates. RMR2 is being redesigned around cyclic protocols with eight interventions and mesenchymal stem cells — and that iterative loop between mouse data and protocol design is exactly the kind of infrastructure the field has been missing.",
-  "oneNumber": "1,000 | Mice in the LEV Foundation RMR1 trial — the largest combination longevity study ever run, combining rapamycin, senolytics, telomerase gene therapy, and HSCT",
+  "subjectLine": "Combo longevity therapy proves additive in 1,000 mice \ud83e\uddec",
+  "borisTake": "This is the first empirical proof that SENS-style damage-repair stacking actually compounds \u2014 not the metabolic-tweak combinations that Brian Kennedy showed cancel each other out. The takeaway for protocol design: single-dose senolytics clearly isn't enough, damage re-accumulates, and cyclic D+Q or navitoclax looks increasingly like the right call.",
+  "leadAnalysis": "The LEV Foundation's RMR1 study is the first large-scale empirical test of the damage-repair synergy hypothesis: that combining therapies targeting distinct categories of age damage produces additive rather than antagonistic effects. With 1,000 mice across 10 subgroups per sex, starting treatment at 18 months (late middle age), it had the statistical power to actually resolve interactions \u2014 something most longevity trials can't claim. The result is meaningful but nuanced: a clear rectangularization of the survival curve (more mice reaching late life) with no extension of maximum lifespan, which tells us that single-dose damage repair has a limited efficacy window because the damage re-accumulates. RMR2 is being redesigned around cyclic protocols with eight interventions and mesenchymal stem cells \u2014 and that iterative loop between mouse data and protocol design is exactly the kind of infrastructure the field has been missing.",
+  "oneNumber": "1,000 | Mice in the LEV Foundation RMR1 trial \u2014 the largest combination longevity study ever run, combining rapamycin, senolytics, telomerase gene therapy, and HSCT",
   "papers": [
     {
       "title": "Robust Mouse Rejuvenation: Combining Rapamycin, Senolytics, Telomerase Gene Therapy and HSCT Proves Additive",
       "url": "https://www.levf.org/breaking-the-ceiling-of-longevity-research",
       "source": "LEV Foundation / fightaging.org",
-      "summary": "RMR1 tested four synergistic interventions in 1,000 middle-aged mice. The all-four combination group showed a rectangularized survival curve — significantly more mice reaching late life — but maximum lifespan was unchanged. Key finding: single-dose damage repair has a limited window; future protocols must use cyclic dosing. RMR2 is now in design with eight interventions.",
-      "tags": ["combination-therapy", "senolytics", "gene-therapy", "rapamycin", "mouse-study"]
+      "summary": "RMR1 tested four synergistic interventions in 1,000 middle-aged mice. The all-four combination group showed a rectangularized survival curve \u2014 significantly more mice reaching late life \u2014 but maximum lifespan was unchanged. Key finding: single-dose damage repair has a limited window; future protocols must use cyclic dosing. RMR2 is now in design with eight interventions.",
+      "tags": [
+        "combination-therapy",
+        "senolytics",
+        "gene-therapy",
+        "rapamycin",
+        "mouse-study"
+      ],
+      "score": 5
     },
     {
       "title": "Autophagy-Senescence Threshold Model: The Dual Role of Autophagy in Preventing and Sustaining SASP",
       "url": "https://doi.org/10.1016/j.redox.2026.104079",
       "source": "Redox Biology",
       "summary": "A new review proposes a threshold model reconciling autophagy's paradoxical roles: below a damage threshold, autophagy suppresses senescence; above it, autophagy is reprogrammed to sustain senescent cell metabolism and SASP production. Key nodes include mTORC1, AMPK, p53, and the TASCC compartment. The clinical implication: autophagy activators for prevention, autophagy inhibitors or senolytics for established disease.",
-      "tags": ["autophagy", "senescence", "SASP", "mTOR", "senolytics"]
+      "tags": [
+        "autophagy",
+        "senescence",
+        "SASP",
+        "mTOR",
+        "senolytics"
+      ],
+      "score": 3
     },
     {
       "title": "One Year of Resistance Training Measurably Slows Brain Aging in 309 Older Adults",
       "url": "https://link.springer.com/article/10.1007/s11357-026-02141-x",
       "source": "GeroScience",
-      "summary": "Using brain clock models on fMRI data, researchers found both heavy and moderate resistance training significantly slowed brain aging in a 1-year RCT with 309 adults aged 62–70. Heavy resistance training showed stronger connectivity gains in prefrontal, motor cortex, and superior parietal regions — areas governing attention and executive function. The effect was global, not region-specific.",
-      "tags": ["exercise", "brain-aging", "RCT", "cognitive-health", "biomarkers"]
+      "summary": "Using brain clock models on fMRI data, researchers found both heavy and moderate resistance training significantly slowed brain aging in a 1-year RCT with 309 adults aged 62\u201370. Heavy resistance training showed stronger connectivity gains in prefrontal, motor cortex, and superior parietal regions \u2014 areas governing attention and executive function. The effect was global, not region-specific.",
+      "tags": [
+        "exercise",
+        "brain-aging",
+        "RCT",
+        "cognitive-health",
+        "biomarkers"
+      ],
+      "score": 4
     },
     {
       "title": "Gut Bacterium Roseburia inulinivorans Linked to 29% Higher Muscle Strength in Older Adults",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41806991/",
-      "source": "PubMed / University of Almería & LUMC",
-      "summary": "In human cohorts and mouse validation, R. inulinivorans was the only Roseburia species causally linked to muscle strength — 29% higher handgrip in older adults with detectable levels. Mouse experiments confirmed causation via oral gavage post-antibiotic depletion. The mechanism is unclear but the exercise mimetic angle is significant, especially given GLP-1 agonist-related lean mass loss concerns.",
-      "tags": ["microbiome", "muscle", "sarcopenia", "exercise-mimetic", "gut-health"]
+      "source": "PubMed / University of Almer\u00eda & LUMC",
+      "summary": "In human cohorts and mouse validation, R. inulinivorans was the only Roseburia species causally linked to muscle strength \u2014 29% higher handgrip in older adults with detectable levels. Mouse experiments confirmed causation via oral gavage post-antibiotic depletion. The mechanism is unclear but the exercise mimetic angle is significant, especially given GLP-1 agonist-related lean mass loss concerns.",
+      "tags": [
+        "microbiome",
+        "muscle",
+        "sarcopenia",
+        "exercise-mimetic",
+        "gut-health"
+      ],
+      "score": 3
     },
     {
       "title": "Mouse Brain Slices Successfully Vitrified and Rewarmed with Neuronal Function Preserved",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41774797/",
       "source": "PNAS / FAU Erlangen",
-      "summary": "FAU researchers vitrified mouse brain slices (and a complete brain) using a CPA cocktail that eliminated ice crystal formation. Upon rewarming, only a 22% reduction in basal mitochondrial respiration was observed vs fresh controls — a milestone for the field. This is the first demonstration of preserved neuronal function after brain cryopreservation, relevant both to transplantation and cryonics.",
-      "tags": ["cryopreservation", "neuro", "vitrification", "longevity-tech"]
+      "summary": "FAU researchers vitrified mouse brain slices (and a complete brain) using a CPA cocktail that eliminated ice crystal formation. Upon rewarming, only a 22% reduction in basal mitochondrial respiration was observed vs fresh controls \u2014 a milestone for the field. This is the first demonstration of preserved neuronal function after brain cryopreservation, relevant both to transplantation and cryonics.",
+      "tags": [
+        "cryopreservation",
+        "neuro",
+        "vitrification",
+        "longevity-tech"
+      ],
+      "score": 3
     },
     {
       "title": "ATP Deficiency Drives VMAT2 Downregulation and Alpha-Synuclein Accumulation in Parkinson's",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41671379/",
       "source": "Science Advances / LMU Munich",
       "summary": "Using iPSC-derived human dopaminergic neurons from DJ-1 knockout lines, researchers showed that mitochondrial ATP deficiency reduces VMAT2 expression and vesicle density, causing cytosolic dopamine oxidation and alpha-synuclein aggregation. ATP supplementation partially rescued the phenotype. This is the first human-neuron-level confirmation of this pathway and may explain why mouse Parkinson's models consistently fail to replicate human disease.",
-      "tags": ["neuro", "Parkinsons", "mitochondria", "ATP", "iPSC", "alpha-synuclein"]
+      "tags": [
+        "neuro",
+        "Parkinsons",
+        "mitochondria",
+        "ATP",
+        "iPSC",
+        "alpha-synuclein"
+      ],
+      "score": 3
     },
     {
       "title": "7-Ketocholesterol: A Comprehensive Review of its Systemic Toxicity (Cyclarity Therapeutics)",
       "url": "https://lifespan.io/news/the-many-dangers-of-7-ketocholesterol/",
       "source": "lifespan.io / Cyclarity Therapeutics",
-      "summary": "Matthew O'Connor (Cyclarity) and colleagues detail 7-ketocholesterol's damage across tissues — it accumulates with age, resists normal cholesterol clearance pathways, and drives inflammation, atherosclerosis, and cellular dysfunction. The review positions 7KC as an underappreciated but major aging driver and implicitly makes the case for Cyclarity's beta-cyclodextrin-based lipid clearing approach.",
-      "tags": ["atherosclerosis", "oxysterols", "inflammation", "lipids", "senolytics-adjacent"]
+      "summary": "Matthew O'Connor (Cyclarity) and colleagues detail 7-ketocholesterol's damage across tissues \u2014 it accumulates with age, resists normal cholesterol clearance pathways, and drives inflammation, atherosclerosis, and cellular dysfunction. The review positions 7KC as an underappreciated but major aging driver and implicitly makes the case for Cyclarity's beta-cyclodextrin-based lipid clearing approach.",
+      "tags": [
+        "atherosclerosis",
+        "oxysterols",
+        "inflammation",
+        "lipids",
+        "senolytics-adjacent"
+      ],
+      "score": 2
     }
   ]
 }
