@@ -10,42 +10,48 @@
       "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00102-3",
       "source": "Cell Reports Medicine",
       "summary": "Researchers developed PLNP, a lipid nanoparticle that mimics acetylcholine to cross the blood-brain barrier via receptor-mediated endocytosis, delivering TRIM11 mRNA to neurons. TRIM11 is an ATP-independent ubiquitin ligase that naturally degrades tau aggregates and is downregulated in Alzheimer's disease. In transgenic AD mice, three PLNP-TRIM11 doses over two weeks prevented tau tangle accumulation — no statistically significant difference from sham controls — while achieving 17x greater brain delivery than standard LNPs.",
-      "tags": ["neuro", "alzheimers", "mrna", "drug-delivery", "tau", "LNP"]
+      "tags": ["neuro", "alzheimers", "mrna", "drug-delivery", "tau", "LNP"],
+      "score": 5
     },
     {
       "title": "Emerging Strategies in Senotherapeutics: From Broad-Spectrum Senolysis to Precision Reprogramming",
       "url": "https://doi.org/10.1038/s41514-026-00355-z",
       "source": "npj Aging (Nature)",
       "summary": "A comprehensive review in Nature npj Aging synthesizes three next-generation senolytic approaches: (1) immune-based senolysis using CAR-T cells targeting uPAR and checkpoint blockade of GD3 ganglioside; (2) tissue-precision PROTACs recruiting organ-specific E3 ligases to degrade BCL-xL locally, reducing systemic toxicity vs navitoclax; (3) microbiome-epigenetic interplay where butyrate-producing gut bacteria epigenetically regulate drug transporter expression and suppress SASP. First-generation D+Q and navitoclax showed proof-of-concept but significant resistance mechanisms — this review maps the shift toward precision senotherapy.",
-      "tags": ["senolytics", "CAR-T", "PROTACs", "senescence", "SASP", "precision-medicine"]
+      "tags": ["senolytics", "CAR-T", "PROTACs", "senescence", "SASP", "precision-medicine"],
+      "score": 4
     },
     {
       "title": "Senescent-Like Neutrophils in Aged Hosts Impair Pneumococcal Clearance via SASP-Driven Energy Deficit",
       "url": "https://doi.org/10.1111/acel.70435",
       "source": "Aging Cell",
       "summary": "RNA-seq and functional assays in aged vs young mice infected with S. pneumoniae revealed that neutrophils (PMNs) from aged hosts adopt a senescent-like phenotype: elevated TNFα/IL-10/ROS at baseline, reduced apoptosis, and critically — failure to upregulate glycolysis and mitochondrial ROS production needed to kill bacteria. Blocking TNFα (one SASP factor) restored antibacterial PMN activity and improved host survival. This is a direct mechanistic link between cellular senescence in innate immune cells and the well-known age-related susceptibility to respiratory infection.",
-      "tags": ["innate-immunity", "senescence", "SASP", "infection", "neutrophils", "inflammaging"]
+      "tags": ["innate-immunity", "senescence", "SASP", "infection", "neutrophils", "inflammaging"],
+      "score": 4
     },
     {
       "title": "PUFA/MUFA Ratio in Diet Determines T Cell Ferroptosis Resistance and Anti-Tumor Immunity",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41781622/",
       "source": "Nature / University of Queensland",
       "summary": "T cells are regulated not just by apoptosis but by ferroptosis — iron-mediated lipid peroxidation that perforates cell membranes. This Nature paper shows that the ratio of polyunsaturated to monounsaturated fatty acids in diet directly determines T cell susceptibility to ferroptosis, and by extension anti-tumor immunity and humoral immunity. The practical implication: standard 'healthy' diets with high PUFA content may paradoxically impair T cell longevity — a significant immune aging angle that hasn't reached mainstream longevity protocols.",
-      "tags": ["immunity", "diet", "T-cells", "ferroptosis", "anti-tumor", "immune-aging"]
+      "tags": ["immunity", "diet", "T-cells", "ferroptosis", "anti-tumor", "immune-aging"],
+      "score": 3
     },
     {
       "title": "Feedback Loop Model Explains Negligible Senescence: Why Some Species Escape Aging",
       "url": "https://doi.org/10.1002/ece3.72988",
       "source": "Ecology and Evolution",
       "summary": "Expanding Hamilton's classic model with damage-accumulation dynamics, researchers show that a positive feedback loop — where genes slowing aging increase selection pressure for further senescence retardation — can produce theoretical immortality. This explains Peto's paradox, the Strehler-Mildvan correlation, and negligible senescence in hydra and naked mole rats. The implication is that the 'damage snowball' can be run in reverse: interventions that meaningfully slow damage accumulation could create their own selection-like pressure toward further biological stabilization.",
-      "tags": ["aging-theory", "negligible-senescence", "evolution", "hallmarks-of-aging"]
+      "tags": ["aging-theory", "negligible-senescence", "evolution", "hallmarks-of-aging"],
+      "score": 3
     },
     {
       "title": "Toxic Social Relationships ('Hasslers') Independently Predict Accelerated Epigenetic Aging — PNAS",
       "url": "https://www.pnas.org/doi/10.1073/pnas.2515331123",
       "source": "PNAS",
       "summary": "A study of 2,345 people aged 18-103 found that having more 'hasslers' — people in close networks who create chronic stress — independently predicts faster biological aging via epigenetic clocks, after adjusting for conventional risk factors. About 28.8% of participants had at least one hassler. The effect was strongest in women, the unemployed, and daily smokers. Mechanistically it fits the chronic cortisol/IL-6 hypothesis; the novel contribution is quantifying the dose-response across the full adult lifespan.",
-      "tags": ["epigenetics", "social-health", "stress", "biological-age", "biomarkers"]
+      "tags": ["epigenetics", "social-health", "stress", "biological-age", "biomarkers"],
+      "score": 3
     }
   ]
 }
