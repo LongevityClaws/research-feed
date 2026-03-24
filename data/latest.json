@@ -1,25 +1,35 @@
 {
   "date": "2026-03-24",
-  "subjectLine": "DunedinPACE beats 13 biomarkers for mortality prediction 🧬",
-  "borisTake": "This settles the biomarker debate for me — DunedinPACE outperformed CRP, IGF-1, gait speed, and 11 other standard measures in predicting mortality across 1,083 older adults. Every longevity clinic should be running epigenetic clocks as their primary readout, not just an inflammation panel.",
-  "leadAnalysis": "In the Berlin Aging Study II (n=1,083, mean follow-up 7.4 years), DunedinPACE emerged as the single strongest predictor of all-cause mortality among 14 expert-consented biomarkers in adjusted Cox regression — outperforming IL-6, CRP, IGF-1, grip strength, and gait speed. The mechanism is straightforward: DunedinPACE integrates methylation signals across thousands of CpG sites trained on longitudinal aging trajectories, capturing systemic biological rate that single inflammatory or functional markers miss. Critically, a minimal three-variable model combining DunedinPACE with standing balance and muscle mass achieved nearly identical discriminative accuracy (C-index 0.63 vs 0.65 for all 14 variables), suggesting most of what we currently measure in longevity panels adds noise rather than signal. The clinical implication is direct: pace-of-aging epigenetic clocks should be the primary outcome measure in intervention trials — not secondary biomarkers tagged on after CRP.",
-  "oneNumber": "9.6 years | The global healthspan-to-lifespan gap — medicine currently adds years lived with disease, not good years",
+  "subjectLine": "DunedinPACE beats 13 biomarkers for mortality prediction \ud83e\uddec",
+  "borisTake": "This settles the biomarker debate for me \u2014 DunedinPACE outperformed CRP, IGF-1, gait speed, and 11 other standard measures in predicting mortality across 1,083 older adults. Every longevity clinic should be running epigenetic clocks as their primary readout, not just an inflammation panel.",
+  "leadAnalysis": "In the Berlin Aging Study II (n=1,083, mean follow-up 7.4 years), DunedinPACE emerged as the single strongest predictor of all-cause mortality among 14 expert-consented biomarkers in adjusted Cox regression \u2014 outperforming IL-6, CRP, IGF-1, grip strength, and gait speed. The mechanism is straightforward: DunedinPACE integrates methylation signals across thousands of CpG sites trained on longitudinal aging trajectories, capturing systemic biological rate that single inflammatory or functional markers miss. Critically, a minimal three-variable model combining DunedinPACE with standing balance and muscle mass achieved nearly identical discriminative accuracy (C-index 0.63 vs 0.65 for all 14 variables), suggesting most of what we currently measure in longevity panels adds noise rather than signal. The clinical implication is direct: pace-of-aging epigenetic clocks should be the primary outcome measure in intervention trials \u2014 not secondary biomarkers tagged on after CRP.",
+  "oneNumber": "9.6 years | The global healthspan-to-lifespan gap \u2014 medicine currently adds years lived with disease, not good years",
   "papers": [
     {
       "title": "DunedinPACE Outperforms 13 Consensus Biomarkers in Predicting Mortality (n=1,083)",
       "url": "https://doi.org/10.1186/s40364-026-00909-z",
       "source": "Biomarker Research",
       "date": "2026-03-23",
-      "summary": "In the Berlin Aging Study II, DunedinPACE emerged as the strongest mortality predictor among 14 expert-consented biomarkers including IL-6, CRP, IGF-1, and grip strength. A minimal 3-variable model (DunedinPACE + balance + muscle mass) matched the full 14-variable model's accuracy — most of what longevity panels measure is noise.",
-      "tags": ["epigenetics", "biomarkers", "clocks"]
+      "summary": "In the Berlin Aging Study II, DunedinPACE emerged as the strongest mortality predictor among 14 expert-consented biomarkers including IL-6, CRP, IGF-1, and grip strength. A minimal 3-variable model (DunedinPACE + balance + muscle mass) matched the full 14-variable model's accuracy \u2014 most of what longevity panels measure is noise.",
+      "tags": [
+        "epigenetics",
+        "biomarkers",
+        "clocks"
+      ],
+      "score": 5
     },
     {
       "title": "Partial Reprogramming Is Conserved from Insect to Mammal",
       "url": "https://pubmed.ncbi.nlm.nih.gov/41597242/",
       "source": "Cells",
       "date": "2026-01-16",
-      "summary": "OSKM Yamanaka factor reprogramming extends lifespan in both Drosophila and mice, with the review arguing cellular plasticity and reprogramming capacity is evolutionarily ancient — conserved across 600M years. Implications for cross-species protocol development and clinical translation of partial reprogramming.",
-      "tags": ["reprogramming", "OSKM", "lifespan"]
+      "summary": "OSKM Yamanaka factor reprogramming extends lifespan in both Drosophila and mice, with the review arguing cellular plasticity and reprogramming capacity is evolutionarily ancient \u2014 conserved across 600M years. Implications for cross-species protocol development and clinical translation of partial reprogramming.",
+      "tags": [
+        "reprogramming",
+        "OSKM",
+        "lifespan"
+      ],
+      "score": 4
     },
     {
       "title": "Collagen Downregulation Is a Genetic Hallmark of Aging in C. elegans",
@@ -27,23 +37,38 @@
       "source": "Matrix Biology Plus",
       "date": "2026-03-23",
       "summary": "16 collagen genes consistently downregulate with age across independent studies; collagen upregulation appears in 84% of long-lived mutant conditions. Tissue-specific collagen clusters point to extracellular matrix maintenance as a tractable longevity target beyond the canonical hallmarks.",
-      "tags": ["ecm", "collagen", "hallmarks"]
+      "tags": [
+        "ecm",
+        "collagen",
+        "hallmarks"
+      ],
+      "score": 4
     },
     {
       "title": "Healthy Life Extension: Geroscience's North Star",
       "url": "https://doi.org/10.18632/aging.206359",
       "source": "Aging",
       "date": "2026-03-23",
-      "summary": "A longevity physician argues the field must abandon the 'healthspan not lifespan' framing as scientifically incoherent. The global healthspan-to-lifespan gap is 9.6 years. NIA's aging biology division gets $346M vs billions for neuroscience — civilisation-scale leverage, niche-scale funding.",
-      "tags": ["geroscience", "policy", "healthspan"]
+      "summary": "A longevity physician argues the field must abandon the 'healthspan not lifespan' framing as scientifically incoherent. The global healthspan-to-lifespan gap is 9.6 years. NIA's aging biology division gets $346M vs billions for neuroscience \u2014 civilisation-scale leverage, niche-scale funding.",
+      "tags": [
+        "geroscience",
+        "policy",
+        "healthspan"
+      ],
+      "score": 3
     },
     {
       "title": "Mouse Brain Vitrified and Rewarmed with Mostly Preserved Neuronal Function",
       "url": "https://lifespan.io/news/scientists-successfully-freeze-and-rewarm-mouse-brain-slices/",
       "source": "Lifespan.io / PNAS",
       "date": "2026-03-24",
-      "summary": "German researchers vitrified mouse brain slices and complete brains using a proprietary CPA cocktail, storing in liquid nitrogen for up to 7 days. Upon rewarming, basal respiration was ~78% preserved vs fresh controls — first demonstrated functional recovery after full brain cryopreservation.",
-      "tags": ["cryopreservation", "neuro", "brain"]
+      "summary": "German researchers vitrified mouse brain slices and complete brains using a proprietary CPA cocktail, storing in liquid nitrogen for up to 7 days. Upon rewarming, basal respiration was ~78% preserved vs fresh controls \u2014 first demonstrated functional recovery after full brain cryopreservation.",
+      "tags": [
+        "cryopreservation",
+        "neuro",
+        "brain"
+      ],
+      "score": 4
     },
     {
       "title": "Buck Institute Launches Healthspan Horizons Initiative",
@@ -51,15 +76,25 @@
       "source": "Lifespan.io",
       "date": "2026-03-24",
       "summary": "The Buck Institute announces Healthspan Horizons, a new programme addressing urgent challenges in aging medicine. Signals continued institutional momentum and translation focus from one of the field's flagship research centres.",
-      "tags": ["institutional", "buck-institute", "healthspan"]
+      "tags": [
+        "institutional",
+        "buck-institute",
+        "healthspan"
+      ],
+      "score": 3
     },
     {
       "title": "Biological Age Tests: Science or High-Tech Horoscopes?",
       "url": "https://lifespan.io/news/when-doctors-prescribe-horoscopes-the-trouble-with-biological-age-tests/",
       "source": "Lifespan.io",
       "date": "2026-03-24",
-      "summary": "Critical analysis of direct-to-consumer biological age testing — questions whether cheek-swab 'true biological age' products have sufficient clinical validation to justify their claims. A useful counterpoint to the DunedinPACE mortality data: validated research clocks are not the same as consumer products.",
-      "tags": ["biomarkers", "clocks", "clinical"]
+      "summary": "Critical analysis of direct-to-consumer biological age testing \u2014 questions whether cheek-swab 'true biological age' products have sufficient clinical validation to justify their claims. A useful counterpoint to the DunedinPACE mortality data: validated research clocks are not the same as consumer products.",
+      "tags": [
+        "biomarkers",
+        "clocks",
+        "clinical"
+      ],
+      "score": 3
     }
   ]
 }
