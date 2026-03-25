@@ -10,7 +10,7 @@ const RELEVANCE_LABELS: Record<string, string> = {
 }
 
 export default function Home() {
-  const teaser = digest.papers.find(p => p.score >= 3) ?? digest.papers[0]
+  const teaser = digest.papers[0]
   const date = new Date(digest.date).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
 
   return (
