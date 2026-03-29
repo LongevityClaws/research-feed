@@ -1,245 +1,37 @@
-{
-  "items": [
-    {
-      "url": "https://doi.org/10.1101/2025.11.14.688504",
-      "title": "CD4+ T cells confer transplantable rejuvenation via Rivers of telomeres",
-      "date": "2026-03-16"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41597242/",
-      "title": "Partial Reprogramming Is Conserved from Insect to Mammal",
-      "date": "2026-03-16"
-    },
-    {
-      "url": "https://doi.org/10.1126/sciadv.aec9991",
-      "title": "Immunometabolic Resistors of Aging in Long-Lived Golden Spiny Mice",
-      "date": "2026-03-16"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41677077/",
-      "title": "Multidomain Lifestyle Intervention Improves Epigenetic Aging in Frail Older Adults: RCT",
-      "date": "2026-03-16"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/40576558/",
-      "title": "Pitavastatin Slows Epigenetic Aging in HIV: REPRIEVE Substudy",
-      "date": "2026-03-16"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41655607/",
-      "title": "NAD+ Supplementation for Anti-Aging and Wellness: A PRISMA-Guided Systematic Review",
-      "date": "2026-03-16"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.phrs.2026.108154",
-      "title": "Fenofibrate Delays Aging via the PPAR\u03b1\u2013CPT1C Axis",
-      "date": "2026-03-16"
-    },
-    {
-      "url": "https://doi.org/10.64898/2026.02.09.26345899",
-      "title": "IGFBP7 Is a Circulating Brake on Exercise Adaptation Linked to Senescence",
-      "date": "2026-03-17"
-    },
-    {
-      "url": "https://doi.org/10.1038/s41368-026-00428-5",
-      "title": "ANKRD1 Sustains a Neurogenic Bone Marrow Niche and Counters Cognitive Aging",
-      "date": "2026-03-17"
-    },
-    {
-      "url": "https://doi.org/10.64898/2026.02.10.705129",
-      "title": "SASP-Dependent Paracrine Spreading of Senescence Between Human Brain Cell Types",
-      "date": "2026-03-17"
-    },
-    {
-      "url": "https://doi.org/10.64898/2026.02.06.26345739",
-      "title": "Organ-Specific Senescence Signatures in Circulation Predict Tissue-Matched Disease (SenCat / BLSA)",
-      "date": "2026-03-17"
-    },
-    {
-      "url": "https://www.nature.com/articles/s41586-026-10191-6",
-      "title": "Gut Bacteria Drive Age-Related Cognitive Decline via the Vagus Nerve (Stanford, Nature)",
-      "date": "2026-03-17"
-    },
-    {
-      "url": "https://onlinelibrary.wiley.com/doi/10.1111/acel.70443",
-      "title": "Zinc Protects Injured Arteries from Nuclear Dysmorphism and Accelerated Senescence",
-      "date": "2026-03-17"
-    },
-    {
-      "url": "https://doi.org/10.1038/s41598-025-28494-5",
-      "title": "Mitochondrial Uptake in Mesenchymal Stromal Cells: Multiple Endocytic Pathways Confirmed",
-      "date": "2026-03-17"
-    },
-    {
-      "url": "https://www.levf.org/breaking-the-ceiling-of-longevity-research"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.redox.2026.104079"
-    },
-    {
-      "url": "https://link.springer.com/article/10.1007/s11357-026-02141-x"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41806991/"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41774797/"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41671379/"
-    },
-    {
-      "url": "https://lifespan.io/news/the-many-dangers-of-7-ketocholesterol/"
-    },
-    {
-      "url": "https://www.cell.com/cell-reports-medicine/fulltext/S2666-3791(26)00102-3",
-      "title": "mRNA-LNP Mimicking Acetylcholine Crosses Blood-Brain Barrier and Clears Tau Tangles in Alzheimer's Model",
-      "date": "2026-03-20"
-    },
-    {
-      "url": "https://doi.org/10.1038/s41514-026-00355-z",
-      "title": "Emerging Strategies in Senotherapeutics: From Broad-Spectrum Senolysis to Precision Reprogramming",
-      "date": "2026-03-20"
-    },
-    {
-      "url": "https://doi.org/10.1111/acel.70435",
-      "title": "Senescent-Like Neutrophils in Aged Hosts Impair Pneumococcal Clearance via SASP-Driven Energy Deficit",
-      "date": "2026-03-20"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41781622/",
-      "title": "PUFA/MUFA Ratio in Diet Determines T Cell Ferroptosis Resistance and Anti-Tumor Immunity",
-      "date": "2026-03-20"
-    },
-    {
-      "url": "https://doi.org/10.1002/ece3.72988",
-      "title": "Feedback Loop Model Explains Negligible Senescence: Why Some Species Escape Aging",
-      "date": "2026-03-20"
-    },
-    {
-      "url": "https://www.pnas.org/doi/10.1073/pnas.2515331123",
-      "title": "Toxic Social Relationships ('Hasslers') Independently Predict Accelerated Epigenetic Aging \u2014 PNAS",
-      "date": "2026-03-20"
-    },
-    {
-      "url": "https://lifespan.io/news/gut-bacteria-might-affect-cognition-via-the-vagus-nerve/",
-      "title": "Aged Gut Microbiome Impairs Hippocampal Memory via the Vagus Nerve"
-    },
-    {
-      "url": "https://doi.org/10.64898/2026.02.26.708335",
-      "title": "Proteome-Wide Subcellular Atlas Maps Hierarchical Sequence of Aging Hallmarks"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.jbc.2026.111351",
-      "title": "mRNA Quality Control Decline as Driver of Aging"
-    },
-    {
-      "url": "https://jamanetwork.com/journals/jamanetworkopen/fullarticle/2846712",
-      "title": "APOE4 Carriers Benefit from Unprocessed Meat"
-    },
-    {
-      "url": "https://doi.org/10.3389/fphar.2026.1733798",
-      "title": "Inflammaging-Driven Sarcopenia Mechanisms"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41577329/",
-      "title": "Ocular Epigenetic Reprogramming Clinical Review"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41512832/",
-      "title": "Anti-Aging Strategies and Ex Vivo Organ Rejuvenation"
-    },
-    {
-      "url": "https://lifespan.io/news/how-zinc-protects-injured-arteries-from-accelerated-aging/",
-      "title": "Zinc Halts Arterial Senescence After Injury"
-    },
-    {
-      "url": "https://doi.org/10.1186/s40364-026-00909-z"
-    },
-    {
-      "url": "https://doi.org/10.1016/j.mbplus.2026.100192"
-    },
-    {
-      "url": "https://doi.org/10.18632/aging.206359"
-    },
-    {
-      "url": "https://lifespan.io/news/scientists-successfully-freeze-and-rewarm-mouse-brain-slices/"
-    },
-    {
-      "url": "https://lifespan.io/news/buck-institute-launches-healthspan-horizons/"
-    },
-    {
-      "url": "https://lifespan.io/news/when-doctors-prescribe-horoscopes-the-trouble-with-biological-age-tests/"
-    },
-    {
-      "url": "https://www.acc.org/About-ACC/Press-Releases/2026/03/16/19/33/Shingles-Vaccine-Drastically-Cuts-Risk-of-Serious-Cardiac-Events",
-      "title": "Shingles Vaccine Slashes Cardiac Events by 46% and All-Cause Mortality by 66%",
-      "date": "2026-03-25"
-    },
-    {
-      "url": "https://doi.org/10.1038/s41467-026-70422-2",
-      "title": "Humans with MSTN Loss-of-Function Variants Have 10%+ More Muscle Mass and Less Adiposity",
-      "date": "2026-03-25"
-    },
-    {
-      "url": "https://doi.org/10.1093/pnasnexus/pgag034",
-      "title": "Amyloid-Beta Displaces Tau from Microtubules",
-      "date": "2026-03-25"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41851456/",
-      "title": "In Vivo CRISPR-Created CAR T Cells Eliminate Tumors Across Three Cancer Types in Mice",
-      "date": "2026-03-25"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41806991/",
-      "title": "Gut Bacterium Roseburia inulinivorans Linked to 29% Higher Handgrip Strength",
-      "date": "2026-03-25"
-    },
-    {
-      "url": "https://pubmed.ncbi.nlm.nih.gov/41597242/",
-      "title": "Partial Reprogramming Is Conserved from Insect to Mammal",
-      "date": "2026-03-25"
-    },
-    {
-      "url": "https://lifespan.io/news/the-many-dangers-of-7-ketocholesterol/",
-      "title": "7-Ketocholesterol: Systemic Toxicity and Therapeutic Targeting",
-      "date": "2026-03-25"
-    },
-    {
-      "url": "https://doi.org/10.3803/EnM.2025.2816",
-      "title": "Cellular Senescence in Skeletal Muscle Aging",
-      "date": "2026-03-26"
-    },
-    {
-      "url": "https://lifespan.io/news/two-polyunsaturated-lipids-demonstrate-senolytic-activity/",
-      "title": "Two Polyunsaturated Fatty Acids Show Senolytic Activity In Vitro and In Vivo",
-      "date": "2026-03-26"
-    },
-    {
-      "url": "https://doi.org/10.3390/cells15050463",
-      "title": "MG53 in Early Skeletal Muscle Stem Cell Activation: Implications for Aged Muscle Regeneration",
-      "date": "2026-03-26"
-    },
-    {
-      "url": "https://doi.org/10.3390/cells15050414",
-      "title": "Therapeutic Targeting of Immune Aging: From Rapamycin to Thymic Rejuvenation",
-      "date": "2026-03-26"
-    },
-    {
-      "url": "https://lifespan.io/news/negative-interactions-are-associated-with-faster-aging/",
-      "title": "Negative Social Interactions Are Associated With Accelerated Biological Aging",
-      "date": "2026-03-26"
-    },
-    {
-      "url": "https://lifespan.io/news/meat-consumption-may-benefit-apoe4-carriers/",
-      "title": "Meat Consumption May Protect Cognitive Function in APOE4 Carriers",
-      "date": "2026-03-26"
-    },
-    {
-      "url": "https://lifespan.io/news/bioage-labs-provides-business-updates/",
-      "title": "BioAge Labs 2026 Pipeline Update",
-      "date": "2026-03-26"
-    }
-  ]
-}
+[
+  {
+    "url": "https://doi.org/10.1038/s41586-026-10242-y",
+    "title": "Thymic Health Predicts All-Cause Mortality and Cancer Incidence in 27,000+ Adults",
+    "date": "2026-03-29"
+  },
+  {
+    "url": "https://lifespan.io/news/rubedo-announces-positive-preliminary-results-for-rls-1496/",
+    "title": "Rubedo RLS-1496 GPX4 Senolytic Phase 1 Results",
+    "date": "2026-03-29"
+  },
+  {
+    "url": "https://news.kaist.ac.kr/newsen/html/news/?mode=V&mng_no=59490",
+    "title": "RNASEK Decline Circular RNA Accumulation Drives Aging",
+    "date": "2026-03-29"
+  },
+  {
+    "url": "https://lifespan.io/news/mitochondria-delivery-method-rescues-parkinsons-in-mice/",
+    "title": "Red Blood Cell Mitochondria Delivery Rescues Parkinsons",
+    "date": "2026-03-29"
+  },
+  {
+    "url": "https://lifespan.io/news/using-mrna-to-fight-tau-aggregation-in-alzheimers/",
+    "title": "TRIM11 mRNA LNP Clears Tau Aggregates Alzheimers",
+    "date": "2026-03-29"
+  },
+  {
+    "url": "https://lifespan.io/news/gut-bacteria-might-affect-cognition-via-the-vagus-nerve/",
+    "title": "Old Microbiome Transfer Impairs Cognition via Vagus Nerve",
+    "date": "2026-03-29"
+  },
+  {
+    "url": "https://doi.org/10.1016/j.jsbmb.2026.106981",
+    "title": "7-Ketocholesterol Hydroxylated Derivatives New Toxic Oxysterol Class",
+    "date": "2026-03-29"
+  }
+]
