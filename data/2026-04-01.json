@@ -1,65 +1,65 @@
 {
   "date": "2026-04-01",
-  "subjectLine": "Senolytics restore CD8 attack in prostate cancer 💊",
-  "borisTake": "This is exactly why I don't think about senolytics as generic anti-aging pills anymore — the p21+ stromal-cell paper shows that clearing the right senescent niche can reopen CD8 immunity and make checkpoint therapy work again. For protocol design, specificity matters more than hype: smarter, tissue-targeted senolytics are far more interesting than another kitchen-sink stack.",
-  "leadAnalysis": "The key mechanism here is not tumor-cell senescence but p21+ senescent stromal cells in the microenvironment, which carried the strongest SASP program and actively suppressed cytotoxic immunity. When researchers removed that stromal compartment — genetically or with a BCL-xL-targeting senolytic — CD8+ T-cell activity returned, tumor growth slowed, and anti-PD-1 blockade worked better. That reframes senescence as a therapeutic bottleneck sitting upstream of immunotherapy response, not just a background hallmark of aging. Clinically, the opportunity is obvious, but so is the caveat: BCL-xL-class senolytics need cleaner delivery because the biology is promising faster than the safety window.",
-  "oneNumber": "29% | Higher handgrip strength in older adults with detectable Roseburia inulinivorans",
+  "subjectLine": "Ferroptotic senolytic lipids look real 💊",
+  "borisTake": "This is the senolytic paper I'd actually pay attention to: a lipid that kills senescent cells through ferroptosis is a lot more interesting than endlessly recycling dasatinib/quercetin logic. If this mechanism holds up, protocol design shifts from chasing generic apoptosis to mapping which senescent cell states are ferroptosis-addicted and how to hit them cleanly.",
+  "leadAnalysis": "α-ESA and α-ESA-me seem to work because senescent cells already sit on an iron- and ROS-heavy edge; loading highly oxidizable lipids into membranes through the ACSL4-LPCAT3-ALOX15 axis tips them into ferroptosis rather than apoptosis. That matters because it exposes a different vulnerability from the BCL-2/BCL-xL axis most senolytics chase, which could help where first-generation agents are weak or too toxic. The mouse data — including multi-tissue reductions in senescence and SASP markers without obvious systemic toxicity — make this more than a cell-culture curiosity. Clinically, the next bottleneck is whether that selectivity survives real-world dosing, biodistribution, and larger-animal safety.",
+  "oneNumber": "18/20 | Complete leukemia responses after in vivo CAR-T editing",
   "papers": [
     {
-      "title": "Senolytic Clearance of p21+ Stromal Cells Restores Anti-Tumor Immunity in Prostate Cancer",
-      "url": "https://doi.org/10.1158/2159-8290.CD-25-1212",
-      "summary": "In mouse and human prostate cancer datasets, p21+ senescent stromal cells carried the heaviest SASP burden and tracked with immune suppression. Clearing them with a BCL-xL-targeting senolytic reactivated CD8+ T cells, slowed tumor growth, and improved response to anti-PD-1 checkpoint blockade. Strong evidence that senescence isn't just bystander aging biology inside tumors — it's an actionable resistance mechanism.",
-      "source": "Cancer Discovery",
-      "date": "2026-03-02",
-      "tags": ["senolytics", "cancer", "immune", "senescence"]
+      "title": "Polyunsaturated Lipid Senolytics Exploit a Ferroptotic Vulnerability in Senescent Cells",
+      "url": "https://lifespan.io/news/two-polyunsaturated-lipids-demonstrate-senolytic-activity/",
+      "summary": "α-eleostearic acid and its methyl ester killed senescent cells by driving ferroptosis, not the usual apoptosis route most senolytics rely on. In aged and progeroid mice, α-ESA-me reduced senescence markers, SASP factors, DNA damage, and composite aging symptoms without obvious systemic toxicity. This is one of the cleaner examples yet of senescent cells having a targetable metabolic death pathway of their own.",
+      "source": "Cell Press Blue / Lifespan.io",
+      "date": "2026-03-25",
+      "tags": ["senolytics", "ferroptosis", "lipids", "senescence"]
     },
     {
-      "title": "Low-Protein Diet Recruits Gut Microbes to Brown White Fat",
-      "url": "https://www.fightaging.org/archives/2026/03/a-gut-microbiome-response-to-low-protein-intake-drives-beneficial-browning-of-fat-tissue/",
-      "summary": "Nature data summarized by Fight Aging shows low-protein feeding triggers white-fat browning through two microbiome-dependent axes: bile acids activating adipose FXR and microbe-derived ammonia inducing hepatic FGF21. Germ-free mice lost the effect, while defined bacterial consortia restored it. Useful mechanistic bridge between dietary restriction, microbiome engineering, and metabolic rejuvenation.",
-      "source": "Nature / Fight Aging!",
-      "date": "2026-03-31",
-      "tags": ["microbiome", "metabolism", "brown-fat", "diet", "FGF21"]
+      "title": "Partial Reprogramming Is Conserved from Insect to Mammal",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/41597242/",
+      "summary": "A new review argues that the core rejuvenation logic of Yamanaka-factor partial reprogramming now looks evolutionarily conserved across species, from flies to mice. That matters because it suggests the intervention is tapping a deep biological program rather than a one-off rodent artifact. Still a review, not a new efficacy paper, but a useful signal that reprogramming is maturing into a coherent platform.",
+      "source": "Cells / PubMed",
+      "date": "2026-01-16",
+      "tags": ["reprogramming", "epigenetics", "review", "longevity"]
     },
     {
-      "title": "Roseburia inulinivorans Linked to Stronger Muscle in Humans and Mice",
-      "url": "https://lifespan.io/news/study-links-a-gut-bacterium-to-increased-muscle-strength/",
-      "summary": "Older adults carrying detectable R. inulinivorans had 29% higher handgrip strength, and colonized mice gained 30% forelimb grip strength without better endurance. The effect tracked with larger muscle fibers and a shift toward type II fibers, not just body size. That's one of the cleanest gut-muscle axis signals yet, especially relevant for frailty and GLP-1-related lean-mass loss.",
-      "source": "Lifespan.io",
-      "date": "2026-03-17",
-      "tags": ["microbiome", "muscle", "frailty", "exercise-mimetics"]
+      "title": "Remaining Challenges in the Development of Partial Reprogramming Therapies",
+      "url": "https://www.fightaging.org/archives/2026/04/remaining-challenges-in-the-development-of-partial-reprogramming-therapies/",
+      "summary": "Fight Aging highlights the real bottleneck in partial reprogramming: not whether OSKM can rejuvenate tissue, but whether delivery, dose, and tissue context can be controlled tightly enough to avoid teratomas and organ toxicity. Liver and intestine remain the obvious failure points because they reprogram too easily. Good reminder that the field's main problem now is engineering precision, not lack of conceptual excitement.",
+      "source": "Trends in Molecular Medicine / Fight Aging!",
+      "date": "2026-04-01",
+      "tags": ["reprogramming", "delivery", "safety", "clinical-translation"]
     },
     {
-      "title": "FGF21-SIRT1 Signaling Restores Mitophagy in Degenerating Discs",
-      "url": "https://lifespan.io/news/how-a-growth-factor-and-sirt1-might-combat-disc-degeneration/",
-      "summary": "In a rat model of intervertebral disc degeneration, FGF21 upregulated SIRT1, reactivated PINK1-Parkin mitophagy, lowered p16/p21/p53, and improved disc morphology. Knocking down SIRT1 erased the benefit, putting the mechanism on firmer footing than most tissue-aging stories. It's still preclinical, but it points to a tractable mitophagy lever for one of the most common age-linked pain syndromes.",
-      "source": "Aging Cell / Lifespan.io",
-      "date": "2026-03-30",
-      "tags": ["mitophagy", "SIRT1", "musculoskeletal", "FGF21", "senescence"]
+      "title": "Fecal Microbiota Transplantation from Old Mice to Younger Adult Mice Accelerates Aging",
+      "url": "https://www.fightaging.org/archives/2026/04/fecal-microbiota-transplantation-from-old-mice-to-younger-adult-mice-accelerates-aging/",
+      "summary": "Old-to-young microbiota transfer raised oxidative-inflammatory stress, worsened immune function and anxiety-like behavior, increased biological age, and shortened longevity in mice. That's the inverse proof the microbiome field needs: age-associated gut ecology is not just a passenger but can actively push systemic aging. Makes the case for rejuvenation-style microbiome interventions stronger than another correlation paper does.",
+      "source": "Mechanisms of Ageing and Development / Fight Aging!",
+      "date": "2026-04-01",
+      "tags": ["microbiome", "FMT", "longevity", "inflammation"]
     },
     {
-      "title": "Metabolite-Sensing NK and T Cells Penetrate Solid Tumors Better",
-      "url": "https://lifespan.io/news/modified-immune-cells-target-cancers-metabolic-signature/",
-      "summary": "Stanford researchers engineered NK and T cells with metabolite-sensing GPCRs such as GPR183 so the cells follow tumor metabolic gradients instead of relying only on chemokines. In immunocompetent breast cancer mice, Gpr183-engineered T cells produced complete tumor elimination in 7 of 10 animals versus 3 of 10 controls. Nice example of using diseased-tissue metabolism itself as the homing signal.",
-      "source": "Nature Immunology / Lifespan.io",
-      "date": "2026-03-31",
-      "tags": ["immunotherapy", "cell-engineering", "cancer", "metabolism"]
+      "title": "Microplastic and Nanoplastic Exposure in the Context of Aging",
+      "url": "https://www.fightaging.org/archives/2026/04/microplastic-and-nanoplastic-exposure-in-the-context-of-aging/",
+      "summary": "A new review pulls together evidence that micro- and nanoplastics can drive oxidative stress, mitochondrial dysfunction, inflammation, and cellular senescence — exactly the pathways longevity people already worry about. The caveat is important: mechanistic evidence is ahead of human epidemiology, so the risk signal is plausible but still under-quantified. Worth tracking as an exposure biology problem, not as social-media doom content.",
+      "source": "Journal of Xenobiotics / Fight Aging!",
+      "date": "2026-04-01",
+      "tags": ["environment", "microplastics", "senescence", "mitochondria"]
     },
     {
-      "title": "Aging Brains Accumulate Both Reactive and Senescent Astrocytes",
-      "url": "https://www.fightaging.org/archives/2026/03/the-role-of-reactive-and-senescent-astrocytes-in-the-aging-of-the-brain/",
-      "summary": "A new review argues astrocyte reactivity and senescence are overlapping but distinct states that jointly erode neuronal support, proteostasis, mitochondrial function, and blood-brain barrier stability with age. That matters because bluntly suppressing astrocytes could backfire; therapies will need to target the harmful state transitions instead. Good framework paper for anyone thinking seriously about brain aging interventions beyond neurons alone.",
-      "source": "Neurochemical Research / Fight Aging!",
-      "date": "2026-03-31",
-      "tags": ["neuro", "astrocytes", "senescence", "neuroinflammation"]
+      "title": "In Vivo Created CAR T Cells Eliminate Tumors in Mice",
+      "url": "https://lifespan.io/news/in-vivo-created-car-t-cells-eliminate-tumors-in-mice/",
+      "summary": "UCSF researchers used an EDV plus AAV CRISPR system to insert CAR constructs directly into T cells in vivo at the TRAC locus, skipping ex vivo manufacturing entirely. The approach cleared leukemia in 18 of 20 mice, beat a lentiviral in vivo comparator, and also produced strong responses in myeloma and some sarcoma models. If it translates, this could cut cost, wait time, and cell-quality drift — three of CAR-T's biggest practical problems at once.",
+      "source": "Nature / Lifespan.io",
+      "date": "2026-03-24",
+      "tags": ["immunotherapy", "CAR-T", "CRISPR", "cancer"]
     },
     {
-      "title": "Gut-Microbiome Aging Clock Matches Blood Biomarkers at ~6-Year Error",
-      "url": "https://www.fightaging.org/archives/2026/03/aging-clocks-derived-from-clinical-and-gut-microbiome-measures/",
-      "summary": "A clinical-chemistry clock built from seven blood markers and a separate microbiome clock built from 45 bacterial species both predicted biological age with mean absolute error around six years and correlated strongly with PhenoAge. The microbial signature showed the expected pattern: loss of butyrate-supporting, barrier-protective species and rise of more inflammatory taxa with age. Useful reminder that microbiome clocks are getting statistically decent, even if intervention-readiness is still the big missing piece.",
-      "source": "Fight Aging!",
-      "date": "2026-03-31",
-      "tags": ["aging-clock", "microbiome", "biomarkers", "clinical-chemistry"]
+      "title": "Meat Consumption May Benefit APOE4 Carriers",
+      "url": "https://lifespan.io/news/meat-consumption-may-benefit-apoe4-carriers/",
+      "summary": "In a Swedish aging cohort followed for up to 15 years, higher unprocessed meat intake tracked with slower cognitive decline and a 55% lower dementia risk among APOE4 carriers, while processed meat looked unfavorable. The signal also lined up with supportive patterns in UK Biobank and other cohorts. This is exactly the kind of genotype-specific nutrition result that makes blanket diet advice look lazy.",
+      "source": "JAMA Network Open / Lifespan.io",
+      "date": "2026-03-20",
+      "tags": ["APOE4", "diet", "dementia", "precision-nutrition"]
     }
   ]
 }
