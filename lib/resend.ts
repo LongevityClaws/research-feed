@@ -323,20 +323,50 @@ export async function sendWelcomeEmail(email: string, tier: string) {
 
 // ─── Daily digest send ────────────────────────────────────────────────────────
 
-export async function sendDailyDigest(emails: string[], digest: DigestData, tier: 'free' | 'paid') {
+export type DailyDigestSendResult = {
+  recipient: string
+  tier: 'free' | 'paid'
+  accepted: boolean
+  providerMessageId?: string | null
+  error?: string | null
+}
+
+export async function sendDailyDigest(emails: string[], digest: DigestData, tier: 'free' | 'paid'): Promise<DailyDigestSendResult[]> {
   const { Resend } = await import('resend')
   const resend = new Resend(process.env.RESEND_API_KEY?.trim())
+  const results: DailyDigestSendResult[] = []
 
   for (const email of emails) {
     const html = tier === 'paid'
       ? buildFullDigestHtml(digest, email)
       : buildFreeDigestHtml(digest, email)
 
-    await resend.emails.send({
-      from: 'Longevity Digest <hello@longevitydigest.co>',
-      to: email,
-      subject: digest.subjectLine,
-      html,
-    })
+    try {
+      const response = await resend.emails.send({
+        from: 'Longevity Digest <hello@longevitydigest.co>',
+        to: email,
+        subject: digest.subjectLine,
+        html,
+      })
+      const providerMessageId = response?.data?.id ?? null
+      const errorMessage = response?.error ? JSON.stringify(response.error) : null
+      results.push({
+        recipient: email,
+        tier,
+        accepted: Boolean(providerMessageId) && !errorMessage,
+        providerMessageId,
+        error: errorMessage,
+      })
+    } catch (error) {
+      results.push({
+        recipient: email,
+        tier,
+        accepted: false,
+        providerMessageId: null,
+        error: error instanceof Error ? error.message : String(error),
+      })
+    }
   }
+
+  return results
 }

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server"
-import { getSubscribers, trackEmailSend, getNextIssueNumber, isSubscriberPaused } from "../../../lib/kv"
+import { getSubscribers, trackEmailSend, getNextIssueNumber, isSubscriberPaused, getDigestMetaByDate } from "../../../lib/kv"
 import { sendDailyDigest } from "../../../lib/resend"
 import type { DigestData } from "../../../lib/resend"
 
@@ -15,6 +15,20 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: "Invalid digest format" }, { status: 400 })
     }
     console.log(`[digest] Received for ${body.date}: ${body.papers.length} papers`)
+
+    const existing = await getDigestMetaByDate(body.date)
+    const existingAccepted = Number(existing?.acceptedCount ?? 0)
+    if (existing?.emailId && existingAccepted > 0) {
+      return NextResponse.json({
+        ok: true,
+        date: body.date,
+        emailId: existing.emailId,
+        issueNumber: existing.issueNumber ? Number(existing.issueNumber) : undefined,
+        count: body.papers.length,
+        idempotent: true,
+        acceptedCount: existingAccepted,
+      })
+    }
 
     // Guardrail: warn on missing editorial fields
     const missing = ['borisTake', 'leadAnalysis', 'oneNumber'].filter(f => !body[f])
@@ -36,6 +50,10 @@ export async function POST(req: NextRequest) {
       issueNumber,
     }
 
+    let totalRecipients = 0
+    let acceptedCount = 0
+    const recipientResults: Awaited<ReturnType<typeof sendDailyDigest>> = []
+
     if (process.env.RESEND_API_KEY?.trim()) {
       const allPaid = await getSubscribers("paid")
       const allFree = await getSubscribers("free")
@@ -45,15 +63,22 @@ export async function POST(req: NextRequest) {
       const freeChecks = await Promise.all(allFree.map(async e => ({ e, paused: await isSubscriberPaused(e) })))
       const paid = paidChecks.filter(x => !x.paused).map(x => x.e)
       const free = freeChecks.filter(x => !x.paused).map(x => x.e)
-      const totalRecipients = paid.length + free.length
+      totalRecipients = paid.length + free.length
 
       if (paid.length > 0) {
-        await sendDailyDigest(paid, digest, "paid")
-        console.log(`[digest] Sent full digest to ${paid.length} paid`)
+        const paidResults = await sendDailyDigest(paid, digest, "paid")
+        recipientResults.push(...paidResults)
+        console.log(`[digest] Attempted full digest to ${paid.length} paid (${paidResults.filter(x => x.accepted).length} accepted)`)
       }
       if (free.length > 0) {
-        await sendDailyDigest(free, digest, "free")
-        console.log(`[digest] Sent teaser to ${free.length} free`)
+        const freeResults = await sendDailyDigest(free, digest, "free")
+        recipientResults.push(...freeResults)
+        console.log(`[digest] Attempted teaser to ${free.length} free (${freeResults.filter(x => x.accepted).length} accepted)`)
+      }
+
+      acceptedCount = recipientResults.filter(x => x.accepted).length
+      if (totalRecipients > 0 && acceptedCount === 0) {
+        return NextResponse.json({ error: "No recipient was accepted by Resend", results: recipientResults }, { status: 502 })
       }
 
       // Track the send
@@ -62,6 +87,10 @@ export async function POST(req: NextRequest) {
         subject: digest.subjectLine,
         recipientCount: totalRecipients,
         sentAt: new Date().toISOString(),
+        issueNumber,
+        acceptedCount,
+        providerMessageIds: recipientResults.map(x => x.providerMessageId).filter(Boolean) as string[],
+        recipientResults,
       })
     }
 
@@ -71,6 +100,8 @@ export async function POST(req: NextRequest) {
       emailId,
       issueNumber,
       count: body.papers.length,
+      recipientCount: totalRecipients,
+      acceptedCount,
     })
   } catch (err) {
     console.error("[digest] Error:", err)

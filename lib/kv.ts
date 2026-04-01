@@ -4,6 +4,14 @@ async function getKV() {
   return kv
 }
 
+export type DigestRecipientResult = {
+  recipient: string
+  tier: "free" | "paid"
+  accepted: boolean
+  providerMessageId?: string | null
+  error?: string | null
+}
+
 // ── Subscriber management ────────────────────────────────────────────────
 
 export async function addSubscriber(email: string, tier: "free" | "paid") {
@@ -73,14 +81,97 @@ export async function trackEmailSend(emailId: string, data: {
   subject: string
   recipientCount: number
   sentAt: string
+  issueNumber?: number
+  acceptedCount?: number
+  providerMessageIds?: string[]
+  recipientResults?: DigestRecipientResult[]
 }) {
   const db = await getKV()
   if (!db) return
-  await db.hset(`email:${emailId}`, data)
+  const providerMessageIds = data.providerMessageIds ?? []
+  const recipientResults = data.recipientResults ?? []
+
+  await db.hset(`email:${emailId}`, {
+    date: data.date,
+    subject: data.subject,
+    recipientCount: data.recipientCount,
+    sentAt: data.sentAt,
+    issueNumber: data.issueNumber ?? "",
+    acceptedCount: data.acceptedCount ?? providerMessageIds.length,
+    providerMessageIdsJson: JSON.stringify(providerMessageIds),
+    recipientResultsJson: JSON.stringify(recipientResults),
+  })
   // Add to ordered list of sent digests
   await db.lpush("digests:sent", emailId)
   // Date index for watchdog: digest:sent:YYYY-MM-DD = emailId
   await db.set(`digest:sent:${data.date}`, emailId)
+  await db.hset(`digest:meta:${data.date}`, {
+    emailId,
+    date: data.date,
+    subject: data.subject,
+    recipientCount: data.recipientCount,
+    sentAt: data.sentAt,
+    issueNumber: data.issueNumber ?? "",
+    acceptedCount: data.acceptedCount ?? providerMessageIds.length,
+    providerMessageIdsJson: JSON.stringify(providerMessageIds),
+    recipientResultsJson: JSON.stringify(recipientResults),
+  })
+
+  for (const result of recipientResults) {
+    if (!result.providerMessageId) continue
+    await db.hset(`provider-email:${result.providerMessageId}`, {
+      internalEmailId: emailId,
+      date: data.date,
+      recipient: result.recipient,
+      tier: result.tier,
+      accepted: result.accepted ? "true" : "false",
+      status: result.accepted ? "accepted" : "failed",
+      error: result.error ?? "",
+      createdAt: data.sentAt,
+      updatedAt: data.sentAt,
+    })
+  }
+}
+
+export async function getDigestMetaByDate(date: string): Promise<Record<string, string> | null> {
+  const db = await getKV()
+  if (!db) return null
+  return await db.hgetall(`digest:meta:${date}`)
+}
+
+export async function markProviderEmailEvent(providerMessageId: string, eventType: string, payload: Record<string, unknown> = {}) {
+  const db = await getKV()
+  if (!db) return
+  const now = new Date().toISOString()
+  const existing = await db.hgetall(`provider-email:${providerMessageId}`) as Record<string, string> | null
+  const patch: Record<string, string> = {
+    lastEvent: eventType,
+    updatedAt: now,
+    lastEventPayloadJson: JSON.stringify(payload),
+  }
+
+  const lower = eventType.toLowerCase()
+  if (lower.includes("deliver")) patch.deliveredAt = now
+  if (lower.includes("bounce")) patch.bouncedAt = now
+  if (lower.includes("complain")) patch.complainedAt = now
+  if (lower.includes("open")) patch.openedAt = now
+  if (lower.includes("click")) patch.clickedAt = now
+  if (lower.includes("defer")) patch.deferredAt = now
+  patch.status = lower
+
+  await db.hset(`provider-email:${providerMessageId}`, patch)
+
+  const date = existing?.date
+  if (!date) return
+  const digestMeta = await db.hgetall(`digest:meta:${date}`) as Record<string, string> | null
+  if (!digestMeta) return
+
+  const statuses: Record<string, string> = JSON.parse(digestMeta.providerStatusesJson ?? '{}') as Record<string, string>
+  statuses[providerMessageId] = lower
+  await db.hset(`digest:meta:${date}`, {
+    providerStatusesJson: JSON.stringify(statuses),
+    lastProviderEventAt: now,
+  })
 }
 
 // ── Open tracking ────────────────────────────────────────────────────────
