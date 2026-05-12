@@ -1,7 +1,7 @@
 {
   "date": "2026-05-12",
   "generated_by": "manual-cron",
-  "subjectLine": "FDA cleared first human OSK trial \ud83e\uddec",
+  "subjectLine": "FDA cleared first human OSK trial 🧬",
   "borisTake": "This is the milestone that makes partial reprogramming feel real, not just conference-slide theatre. I still wouldn't let anyone near a systemic OSK protocol without absurdly conservative safety control, but an FDA-cleared ocular trial means the field has finally crossed from mouse optimism into human dose-and-monitor reality.",
   "leadAnalysis": "The mechanism is inducible OSK expression intended to reset aged epigenetic programs in retinal ganglion cells while preserving cell identity by excluding c-Myc, the factor most associated with dedifferentiation and oncogenic risk. That matters because the core bottleneck in reprogramming has never been whether youthful transcriptional states exist, but whether you can drive them in vivo without tipping cells into loss of identity or tumor biology. Starting in optic neuropathies is strategically smart: the eye is compartmentalized, function is measurable, and serious adverse signals should declare themselves earlier than in a whole-body setting. Clinically, this will not validate anti-aging reprogramming overnight, but it is the first real test of whether controlled OSK can move from elegant animal biology into a monitored human therapeutic protocol.",
   "oneNumber": "93 days | Longer healthspan from oral IGF1R inhibition in mice",
@@ -12,12 +12,7 @@
       "summary": "Life Biosciences received FDA IND clearance for ER-100, an inducible OSK gene therapy targeting open-angle glaucoma and NAION, making this the first human trial of partial cellular reprogramming. The real significance is regulatory: reprogramming has moved from animal proof-of-concept into a monitored clinical setting where safety, dosing, and functional vision endpoints finally get tested for real.",
       "source": "Lifespan.io",
       "date": "2026-02-06",
-      "tags": [
-        "reprogramming",
-        "gene-therapy",
-        "vision",
-        "clinical-trial"
-      ],
+      "tags": ["reprogramming", "gene-therapy", "vision", "clinical-trial"],
       "score": 10
     },
     {
@@ -26,12 +21,7 @@
       "summary": "In mice, chronic intermittent hypoxia drove p16-positive endothelial senescence, raised blood pressure, and impaired vascular function, while ablating senescent cells reversed much of the damage. That reframes sleep apnea as a senescence-linked cardiovascular accelerator rather than just a mechanical breathing disorder.",
       "source": "Fight Aging! / preprint",
       "date": "2026-05-11",
-      "tags": [
-        "senescence",
-        "cardio",
-        "sleep",
-        "vascular"
-      ],
+      "tags": ["senescence", "cardio", "sleep", "vascular"],
       "score": 9
     },
     {
@@ -40,12 +30,7 @@
       "summary": "Transcriptomic profiling showed simulated microgravity pushes human immune cells toward the same hallmarks seen in longitudinal aging, including inflammaging, senescence-linked programs, and reduced mitochondrial dependence. If that holds up, microgravity becomes a fast experimental compression chamber for testing aging countermeasures instead of waiting years for natural decline.",
       "source": "Fight Aging! / preprint",
       "date": "2026-05-11",
-      "tags": [
-        "immune",
-        "space",
-        "models",
-        "mitochondria"
-      ],
+      "tags": ["immune", "space", "models", "mitochondria"],
       "score": 8
     },
     {
@@ -54,12 +39,7 @@
       "summary": "Red-light photobiomodulation in aged rats increased presynaptic active zones, elongated postsynaptic membranes, and narrowed synaptic clefts at neuromuscular junctions, all consistent with compensatory functional restoration. Interesting mechanistically for sarcopenia, but the long real-world history of low-level laser therapy still argues for caution about expecting large human effect sizes.",
       "source": "Fight Aging! / Cells",
       "date": "2026-05-11",
-      "tags": [
-        "muscle",
-        "sarcopenia",
-        "photobiomodulation",
-        "neuromuscular"
-      ],
+      "tags": ["muscle", "sarcopenia", "photobiomodulation", "neuromuscular"],
       "score": 7
     },
     {
@@ -68,12 +48,7 @@
       "summary": "A new review argues that immunosenescence and inflammaging are not side effects of neurodegeneration but active drivers through glial dysfunction, blood-brain barrier injury, and failed neuroimmune crosstalk. For the field, that strengthens the case that brain aging cannot be treated seriously while ignoring systemic immune aging.",
       "source": "Fight Aging! / Cells review",
       "date": "2026-05-07",
-      "tags": [
-        "neuro",
-        "immune",
-        "inflammaging",
-        "biomarkers"
-      ],
+      "tags": ["neuro", "immune", "inflammaging", "biomarkers"],
       "score": 8
     },
     {
@@ -82,12 +57,7 @@
       "summary": "Two oral IGF1R inhibitors improved memory, frailty, grip strength, hemodynamics, and hair greying in midlife mice, with one treatment producing a squarer survival curve equivalent to roughly 93 extra healthy days. The catch is brutal: both compounds also raised toxicity flags, which is the usual reminder that nudging longevity pathways pharmacologically is easier than doing it cleanly.",
       "source": "Fight Aging! / preprint",
       "date": "2026-05-06",
-      "tags": [
-        "igf1",
-        "metabolism",
-        "healthspan",
-        "drug-development"
-      ],
+      "tags": ["igf1", "metabolism", "healthspan", "drug-development"],
       "score": 8
     },
     {
@@ -96,12 +66,7 @@
       "summary": "Actigraphy data from 1,338 older adults linked longer and more frequent daytime naps to higher all-cause mortality risk, with morning napping carrying the strongest association. This looks less like a reason to fear every nap and more like a wearable-friendly behavioral biomarker for circadian disruption, hidden disease burden, or inflammatory aging.",
       "source": "Lifespan.io / JAMA Network Open",
       "date": "2026-04-29",
-      "tags": [
-        "sleep",
-        "mortality",
-        "biomarkers",
-        "wearables"
-      ],
+      "tags": ["sleep", "mortality", "biomarkers", "wearables"],
       "score": 7
     }
   ]
